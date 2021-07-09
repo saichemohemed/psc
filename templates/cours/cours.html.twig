@@ -1,0 +1,80 @@
+{% extends 'baseadmin.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block body %}
+
+{% include "include/headerDashboard.html.twig" %}
+
+
+	<!-- Body Start -->
+	<div class="wrapper">
+		<div class="sa4d25">
+			<div class="container-fluid" style="min-height: 600px;">	
+            <h2 class="st_title"><i class="uil uil-book-alt"></i>Cours</h2>
+            <div>
+                <div>
+					<div class="col-md-12">
+						<div class="card_dash1">
+							<div class="card_dash_left1">
+								<i class="uil uil-book-alt"></i>
+								<h1>Mes cours ({{count}})</h1>
+							</div>
+						</div>
+					</div>		
+
+                <div class="_14d25">
+                        <div class="row">
+                       {% set tbl = [] %}
+                        {% for Cour in Cours %}
+                            {% if Cour.Groupe.id not in tbl %}
+                                 {% set tbl = tbl|merge([Cour.Groupe.id ])%}
+                            {% endif %}
+                        {% endfor %}   
+
+
+                    {% for Groupe in Groupes %}
+                        {% if Groupe.id in tbl %}   
+                            <div class="col-lg-3 col-md-4">
+                                <div class="fcrse_1 mt-30">
+                                    <a href="" class="fcrse_img">
+                                        <img src="{{asset('asset/img/images/course-grid/')}}{{Groupe.Langue.img}}" alt="">
+                                        <div class="course-overlay">
+                                            <div class="crse_reviews">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="fcrse_content">
+                                    
+                                        <div class="vdtodt">
+                                            <span class="vdt14">{{Groupe.Langue.Langue}}</span>
+                                        </div>
+                                        <a href="" class="crse14s">{{Groupe.Langue.libelle}}</a>
+                                        <a href="" class="crse-cate">
+                                            {% for CourSoutien in CourSoutiens %}
+                                                {% if CourSoutien.id == Groupe.Langue.id %}
+                                                 Specialite {{CourSoutien.Specialit.nom_specialite}}
+                                                {% endif %}
+                                            {% endfor %}  
+                                        </a>
+                                        <div class="auth1lnkprce">
+                                            <div class="prce142">{{Groupe.Langue.prix}} DA</div>
+                                        </div>
+                                    </div>
+                                </div>	 
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                                         
+                        </div>		
+                    </div>		
+                </div>
+            </div>
+
+			</div>
+		</div>
+{% include "include/footerDashboard.html.twig" %}
+
+	</div>
+
+{% endblock %}

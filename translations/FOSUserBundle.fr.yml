@@ -1,0 +1,140 @@
+group:
+    edit:
+        submit: 'Mettre à jour le groupe'
+    show:
+        name: 'Nom du groupe'
+    new:
+        submit: 'Créer le groupe'
+    flash:
+        updated: 'Le groupe a été mis à jour.'
+        created: 'Le groupe a été créé.'
+        deleted: 'Le groupe a été supprimé.'
+security:
+    login:
+        username: 'Nom d''utilisateur ou email'
+        password: 'Mot de passe'
+        remember_me: 'Se souvenir de moi'
+        submit: Connexion
+        Forgot_your_password: Mot de passe oublié ?
+        You_do_not_have_an_account: Vous n'avez pas de compte ? 
+        register_here: Inscrivez-vous ici
+
+
+profile:
+    show:
+        username: 'Nom d''utilisateur'
+        email: 'Adresse e-mail'
+    edit:
+        submit: 'Mettre à jour'
+    flash:
+        updated: 'Le profil a été mis à jour.'
+change_password:
+    submit: 'Modifier le mot de passe'
+    flash:
+        success: 'Le mot de passe a été modifié.'
+
+registration:
+    check_email: 'Un e-mail a été envoyé à l''adresse %email%. Il contient un lien d''activation sur lequel il vous faudra cliquer afin d''activer votre compte.'
+    confirmed: 'Félicitations %username%, votre compte est maintenant activé.'
+    back: 'Retour à la page d''origine.'
+    submit: 'Créer un compte'
+    flash:
+        user_created: 'L''utilisateur a été créé avec succès.'
+    email:
+        subject: 'Bienvenue %username% !'
+        message: |
+            Bonjour %username% !
+
+            Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
+
+            Ce lien ne peut être utilisé qu'une seule fois pour valider votre compte.
+
+            Cordialement,
+            L'équipe
+
+resetting:
+    check_email: |
+        Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
+        Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
+
+        Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouveau.
+
+    request:
+        username: 'Nom d''utilisateur ou adresse e-mail'
+        submit: 'Réinitialiser le mot de passe'
+    reset:
+        submit: 'Modifier le mot de passe'
+    flash:
+        success: 'Le mot de passe a été réinitialisé avec succès.'
+    email:
+        subject: 'Réinitialisation de votre mot de passe'
+        message: |
+            Bonjour %username% !
+
+            Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
+
+            Cordialement,
+            L'équipe
+
+    New_Password: nouveau mot de passe
+    Repeat_the_new_password: Répéter le nouveau mot de passe
+    Please_enter_your_Username_or_email_address: Veuillez saisir votre Nom d'utilisateur ou adresse e-mail
+
+layout:
+    logout: Déconnexion
+    login: Connexion
+    register: Inscription
+    logged_in_as: 'Connecté en tant que %username%'
+form:
+    group_name: 'Nom du groupe'
+    username: 'Nom d''utilisateur'
+    email: 'Adresse e-mail'
+    current_password: 'Mot de passe actuel'
+    password: 'Mot de passe'
+    password_confirmation: 'Répéter le mot de passe'
+    new_password: 'Nouveau mot de passe'
+    new_password_confirmation: 'Répéter le nouveau mot de passe'
+
+
+profile_edit:
+    Edit_Profile: Modifier Profil
+    mobile_number: numéro de portable
+    Email_Address: Email Adresse
+    Email: Email
+    Headline: Titre
+    Lastname: Nom
+    First_name: Prénom
+    Profession_number: Num de profession
+    Date_of_Birth: Date de naissance
+    Place_of_birth: Lieu de naissance
+    Gender: Sexe
+    Doctor_s_office: Cabinet Médical
+    Address: Adresse
+    Phone: Téléphone
+    Edit_photo: Modifie photo 
+    
+Change_pass:
+    Change_password:  MODIFIER MOT DE PASSE
+    Current_Password: Mot de passe actuel
+    New_Password: Nouveau mot de passe  
+    Repeat_the_new_password: Répéter le nouveau mot de passe
+
+Registration_User:
+    Lastname: Nom
+    Firstname: Prénom
+    username: Nom d'utilisateur 
+    Email: Email
+    password: mot de passe
+    Repeat_password: Répéter le nouveau mot de passe
+    Phone: Téléphone
+    Gender: Sexe
+    Address: Adresse
+    Date_of_Birth: Date de naissance
+    Place_of_birth: Lieu de naissance
+    Accept_the_terms_and_policy: Acceptez les termes et la politique
+    Already_have_an_account: Vous avez déjà un compte
+    Download_pdf_terms_and_conditions: Télécharger les termes et conditions pdf
+    login: se connecter
+    register: s'inscrire
+        
+

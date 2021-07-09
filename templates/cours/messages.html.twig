@@ -1,0 +1,108 @@
+{% extends 'baseadmin.html.twig' %}
+
+{% block title %}messages{% endblock %}
+
+{% block body %}
+
+{% include "include/headerDashboard.html.twig" %}
+
+<style>
+.foo{
+	padding-top: 8px;
+    padding-left: 15px;
+}
+
+</style>
+	<!-- Body Start -->
+	<div class="wrapper">
+		<div class="sa4d25">
+			<div class="container-fluid" style="min-height: 600px;">	
+				<h2 class="st_title"><i class="uil uil-comments"></i>messages</h2>
+				<span class="iconify" data-icon="mdi:calendar-clock" data-inline="false"></span>
+				<div>
+					<div class="col-md-12">
+						<div class="card_dash1">
+							<div class="card_dash_left1">
+								<i class="uil uil-comments"></i>
+								<h1>messages</h1>
+							</div>
+							<div class="card_dash_right1">
+							</div>
+						</div>
+					</div>		
+					<div class="row">
+					<div class="col-12">
+
+
+
+						<div class="all_msg_bg">
+							<div class="row no-gutters">
+								<div class="col-12">			
+									<div class="chatbox_right">
+										<div class="chat_header">
+											<div class="user-status">											
+												<div class="user-avatar">
+													<img src="{{asset('asset/img/myimg/hd_dp.jpg')}}" alt="">
+												</div>
+												<p class="user-status-title"><span class="bold">admin</span></p>													
+											</div>
+										</div>
+										<div class="messages-line simplebar-content-wrapper2 scrollstyle_4">											
+											<div class="mCustomScrollbar">
+											{% for Message in Messages %}	
+													{% if Message.statut == 'reçu' %}
+														<div class="main-message-box ta-right">
+															<div class="message-dt" style="float: right;padding-right: 20px;">
+																<div class="message-inner-dt">
+																	<p style="margin-left: 30%;">{{Message.contenu}}</p>
+																</div><!--message-inner-dt end--><br>
+																<span>{{Message.date|ago }}</span>
+															</div><!--message-dt end-->
+														</div><!--main-message-box end-->
+													{% else %}
+														<div class="main-message-box st3">
+															<div class="message-dt st3">
+																<div class="message-inner-dt">
+																	<p style="margin-right: 30%;">{{Message.contenu}}</p>
+																</div><!--message-inner-dt end-->
+																<span>{{Message.date|ago }}</span>
+															</div><!--message-dt end-->
+														</div><!--main-message-box end-->
+													{% endif %}
+												{% endfor %}
+											</div>
+										</div>
+										<div class="message-send-area">
+                                			{{ form_start(form) }}            												
+													<div class="mf-field">
+													<div class="ui search focus input__msg">
+														<div class="ui left icon input swdh19">
+														    {{ form_widget(form.contenu, {'attr': {'class': 'foo prompt srch_explore','placeholder': "Write a message..."}}) }}
+															{# <input class="prompt srch_explore" type="text" id="chat-widget-message-text-2" name="chat_widget_message_text_2" placeholder="Write a message..."> #}
+														</div>
+													</div>
+													{# <button class="add_msg" type="submit"><i class="uil uil-message"></i></button> #}
+													{{ form_widget(form.submit, {'attr': {'class': ' add_msg uil-message'}}) }}
+												</div>
+											{{ form_end(form) }}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+            	</div>
+			</div>
+		</div>
+{% include "include/footerDashboard.html.twig" %}
+
+	</div>
+
+			<script>
+
+			setInterval(function(){$('#test').load(location.href +  '#test');}, 10000);
+		</script>	
+
+{% endblock %}

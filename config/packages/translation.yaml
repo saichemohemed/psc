@@ -1,0 +1,13 @@
+# framework:
+#     default_locale: fr
+#     translator:
+#         default_path: '%kernel.project_dir%/translations'
+#         fallbacks:
+#             - fr
+framework:
+    default_locale: '%locale%'
+    translator:
+        paths:
+            - '%kernel.project_dir%/translations'
+        fallbacks:
+            - '%locale%'

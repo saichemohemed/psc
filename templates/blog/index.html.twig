@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}événement {% endblock %}
+
+{% block body %}
+
+    {% include "include/headerPage.html.twig" %}
+
+<style>
+.page-link{
+        color: #fbb545;
+
+}
+.page-item.active .page-link {
+
+    background-color: #fbb545 !important;
+    border-color: #fbb545 !important;
+}
+.page-link:hover {
+    color: #fbb5457a;
+    }
+
+</style>
+    </div><!-- bg-header -->
+    <div class="blog-bl content-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="site-content">
+
+                    {% for Evenement in Evenements %}
+                    
+                        <article class="post-blog box-shadow-type2">
+                            <div class="featured-post">
+                                <img src="{{asset('images/Evenement_img/')}}{{Evenement.image}}" alt="images">
+                            </div>
+                            <div class="content-post content-post-blog">
+                                <div class="post-meta">
+                                    <div class="clendar-wrap">
+                                        <div class="day">
+                                            {{Evenement.date|date("d")}}
+                                        </div>
+                                        <div class="month">
+                                            {{Evenement.date|localizeddate('none', 'none', null, null, 'MMMM')}}
+                                        </div>
+                                    </div>
+                                    <ul class="social">
+                                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="content-post-inner">
+                                    <div class="poster lt-sp0029">
+                                        <span><a href="{{path('blog_single',{'id': Evenement.id})}}"></a></span>
+                                    </div>
+                                    <h3 class="entry-title">
+                                        <a href="{{path('blog_single',{'id': Evenement.id})}}" class="lt-sp0023">{{Evenement.titreevenement}}</a>
+                                    </h3>
+                                    <p>
+                                        {{Evenement.delais}}
+                                    </p>
+                                    <div class="flat-button">
+                                        <a href="{{path('blog_single',{'id': Evenement.id})}}"> Lisez maintenant</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                {% endfor %}
+                        
+                    </div>
+                    <div class="pd-pagination-blog pagination">
+                     
+	        <div class="pagination">
+                {{ knp_pagination_render(pagination) }}
+			</div>	
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <div class="widget widget-search">
+                            <div class="search-blog-wrap">
+
+                            </div>
+                        </div>
+                        <div class="widget widget-categories">
+
+                        </div>
+
+                            <div class="widget widget-instagram-post">
+                            <h4 class="widget-title">
+                                <span>galerie</span>
+                            </h4>
+                            <div class="news-block">
+                                <div class="w-content news-block-content news-block-content-cus">
+                                    <ul>
+                                        <li><img src="{{asset('asset/img/images/blog-sidebar/04.png')}}" alt="images"></li>
+                                        <li><img src="{{asset('asset/img/images/blog-sidebar/06.png')}}" alt="images"></li>
+                                        <li><img src="{{asset('asset/img/images/blog-sidebar/06.png')}}" alt="images"></li>
+                                        <li><img src="{{asset('asset/img/images/blog-sidebar/04.png')}}" alt="images"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="free-education">
+                                <div class="free-education-wrap">
+                                    <p class="cl-fff text-center">
+                                        The Best online Education Theme
+                                    </p>
+                                    <h3 class="cl-fff text-center">
+                                        Free Education
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- content-blog -->
+
+
+{% include "include/footerPage.html.twig" %}
+
+{% endblock %}

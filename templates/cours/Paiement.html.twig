@@ -1,0 +1,68 @@
+{% extends 'baseadmin.html.twig' %}
+
+{% block title %}Paiement{% endblock %}
+
+{% block body %}
+
+{% include "include/headerDashboard.html.twig" %}
+
+
+	<!-- Body Start -->
+	<div class="wrapper">
+		<div class="sa4d25">
+			<div class="container-fluid" style="min-height: 600px;">	
+				<h2 class="st_title"><i class="uil uil-wallet"></i>Paiement</h2>
+				<span class="iconify" data-icon="mdi:calendar-clock" data-inline="false"></span>
+				<div>
+					<div class="col-md-12">
+						<div class="card_dash1">
+							<div class="card_dash_left1">
+								<i class="uil uil-wallet"></i>
+								<h1>Paiement</h1>
+							</div>
+							<div class="card_dash_right1">
+							</div>
+						</div>
+					</div>		
+					<div class="row">
+						<div class="col-md-12">
+							<div class="my_courses_tabs">
+								<div class="tab-content" id="pills-tabContent">
+									<div class="tab-pane fade show active" id="pills-my-courses" role="tabpanel">
+										<div class="table-responsive mt-30">
+												<table class="table ucp-table">
+													<thead class="thead-s">
+														<tr>
+															<th class="text-center" scope="col">mantent</th>
+															<th class="text-center" scope="col">date paiement</th>
+															<th class="text-center" scope="col">Langue</th>
+														</tr>
+													</thead>
+													{% for pay in paiement %}
+															<tbody>
+																<tr>
+																	<td class="text-center">{{pay.mantent}}</td>
+																	<td class="text-center">{{pay.date_paiement|date('m/d/Y')}}</td>
+																	<td class="text-center">
+																		{% for Langue in pay.Langue %}
+																			{{Langue.langue}}
+																		{% endfor %}
+																	</td>
+																</tr>
+															</tbody>
+													{% endfor %} 
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+            	</div>
+			</div>
+		</div>
+{% include "include/footerDashboard.html.twig" %}
+
+	</div>
+
+{% endblock %}

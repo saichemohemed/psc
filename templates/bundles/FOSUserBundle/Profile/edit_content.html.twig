@@ -1,0 +1,205 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+
+{% include "include/headerDashboard.html.twig" %}
+
+
+	<!-- Body Start -->
+	<div class="wrapper">
+		<div class="sa4d25">
+			<div class="container-fluid">			
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="st_title"><i class='uil uil-cog'></i> Réglage</h2>
+						<div class="setting_tabs">
+							<ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="pills-account-tab" data-toggle="pill" href="#pills-account" role="tab" aria-selected="true">Compte {{app.user.username}}</a>
+								</li>
+							</ul>
+						</div>
+                        {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
+
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-account" role="tabpanel" aria-labelledby="pills-account-tab">
+								<div class="account_setting">
+                                        <div class="basic_profile">
+										<div class="basic_ptitle">
+											<h4>Modifier Profil</h4>
+										</div>
+										<div class="basic_form">
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="row">
+														<div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    <h6><label for="inputEmail4">{{ 'profile_edit.Lastname'|trans }}</label></h6>
+                                                                    {{ form_widget(form.lastname, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																
+                                                                </div>
+															</div>
+														</div>
+														<div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+																    <h6><label for="inputEmail4">{{ 'profile_edit.First_name'|trans }}</label></h6>
+                                                                    {{ form_widget(form.firstName, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																			
+                                                                </div>
+															</div>
+														</div>
+														<div class="col-lg-12">
+                                                            <div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    
+																	<h6><label for="inputEmail4">{{ 'profile_edit.Email'|trans }}</label></h6>
+                                                                    {{ form_widget(form.email, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																			
+                                                                </div>
+															</div>
+														</div>
+                                                        <div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    
+																	<h6><label for="inputEmail4">{{ 'profile_edit.Date_of_Birth'|trans }}</label></h6>
+                                                                    {{ form_widget(form.birthDate, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																
+                                                                </div>
+															</div>
+														</div>
+														<div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    
+																	<h6><label for="inputEmail4">{{ 'profile_edit.Place_of_birth'|trans }}</label></h6>
+                                                                    {{ form_widget(form.birthPlace, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																			
+                                                                </div>
+															</div>
+														</div>
+
+
+													<div class="col-lg-6">
+                                                    	<div class="ui search focus mt-30">
+														<div class="ui left icon input swdh11 swdh19">
+                                                           
+															<h6><label for="inputEmail4">{{ 'profile_edit.Gender'|trans }}</label></h6>
+                                                            {{ form_widget(form.gender, {'attr': {'class': 'ui fluid search selection dropdown  cntry152', 'autocomplete': 'off'}}) }}																
+                                                        </div>
+                                                    	</div>
+                                                	</div>
+
+														<div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    
+																	<h6><label for="inputEmail4">{{ 'profile_edit.Address'|trans }}</label></h6>
+                                                                    {{ form_widget(form.address, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																			
+                                                                </div>
+															</div>
+														</div>
+                                                      <div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    
+																	<h6><label for="inputEmail4">{{ 'profile_edit.Phone'|trans }}</label></h6>
+                                                                    {{ form_widget(form.phone, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																
+                                                                </div>
+															</div>
+														</div>
+														<div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+																	<h6><label for="inputEmail4">{{ 'profile_edit.Edit_photo'|trans }}</label></h6>
+                                                                    {{ form_widget(form.imageFile, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																			
+                                                                </div>
+															</div>
+														</div>
+														<div class="col-lg-12">
+															<div class="ui search focus mt-30">																
+																<div class="ui form swdh30">
+																	<div class="field">
+																		<textarea rows="3" name="description" id="id_about" placeholder="Write a little description about you..."></textarea>
+																	</div>
+																</div>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="basic_profile1">
+										<div class="basic_ptitle">
+											<h4>profil de famille</h4>
+										</div>
+										<div class="row">
+												<div class="col-lg-12">
+													<div class="row">
+														<div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+																<h6><label for="inputEmail4">nom pere</label></h6>
+                                                                    {{ form_widget(form.nom_pere, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																
+                                                                </div>
+															</div>
+														</div>
+														<div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    <h6><label for="inputEmail4">nom mere</label></h6>
+                                                                    {{ form_widget(form.nom_mere, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																			
+                                                                </div>
+															</div>
+														</div>
+														<div class="col-lg-6">
+                                                            <div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    <h6><label for="inputEmail4">num tel pere</label></h6>
+                                                                    {{ form_widget(form.num_tel_pere, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																			
+                                                                </div>
+															</div>
+														</div>
+                                                        <div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    <h6><label for="inputEmail4">num tel mere</label></h6>
+                                                                    {{ form_widget(form.num_tel_mere, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																
+                                                                </div>
+															</div>
+														</div>
+														<div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    <h6><label for="inputEmail4">profession pere</label></h6>
+                                                                    {{ form_widget(form.profession_pere, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																			
+                                                                </div>
+															</div>
+														</div>
+														<div class="col-lg-6">
+															<div class="ui search focus mt-30">
+																<div class="ui left icon input swdh11 swdh19">
+                                                                    <h6><label for="inputEmail4">profession mere</label></h6>
+                                                                    {{ form_widget(form.profession_mere, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}																			
+                                                                </div>
+															</div>
+														</div>
+
+												
+													</div>
+												</div>
+											</div>
+									</div>
+							            <input class="save_btn" type="submit" value="{{ 'profile.edit.submit'|trans }}" />
+								</div>
+							</div>
+						</div>
+					</div>						
+				</div>
+			</div>
+		</div>
+{% include "include/footerDashboard.html.twig" %}
+
+	</div>
+
+
+{{ form_end(form) }}

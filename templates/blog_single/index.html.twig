@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}événement-Single{% endblock %}
+
+{% block body %}
+
+    {% include "include/headerPage.html.twig" %}
+
+    </div><!-- bg-header -->
+    <div class="blog-single content-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="site-content clearfix">
+                        {% for Evenement in Evenements %}
+                            
+                      
+                        <article class="post post-blog-single">
+                            <div class="featured-post post-img">
+                                <img src="{{asset('images/Evenement_img/')}}{{Evenement.image}}" alt="images">
+                            </div>
+                            <div class="content-blog-single">
+
+                                <div class="content-blog-single-inner">
+                                    <div class="content-blog-single-wrap">
+                                        <h1 class="title pd-title-single">
+                                            <a href="">{{Evenement.titreevenement}}</a>
+                                        </h1>
+                                        <p>
+                                            {{Evenement.delais}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+  {% endfor %}
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <div class="widget widget-search">
+                            <div class="search-blog-wrap">
+                                <form action="#" class="search-form">
+                                </form>
+                            </div>
+                        </div>                    
+                        <div class="widget widget-instagram-post">
+                            <h4 class="widget-title">
+                                <span>galerie</span>
+                            </h4>
+                            <div class="news-block">
+                                <div class="w-content news-block-content news-block-content-cus">
+                                    <ul>
+                                        <li><img src="{{asset('asset/img/images/blog-sidebar/04.png')}}" alt="images"></li>
+                                        <li><img src="{{asset('asset/img/images/blog-sidebar/06.png')}}" alt="images"></li>
+                                        <li><img src="{{asset('asset/img/images/blog-sidebar/06.png')}}" alt="images"></li>
+                                        <li><img src="{{asset('asset/img/images/blog-sidebar/04.png')}}" alt="images"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="free-education">
+                                <div class="free-education-wrap">
+                                    <p class="cl-fff text-center">
+                                        The Best online Education Theme
+                                    </p>
+                                    <h3 class="cl-fff text-center">
+                                        Free Education
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- blog-single -->
+
+{% include "include/footerPage.html.twig" %}
+
+{% endblock %}

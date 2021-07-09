@@ -1,0 +1,245 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}course single{% endblock %}
+
+{% block body %}
+
+{% include "include/headerPage.html.twig" %}
+
+    <div class="courses-single-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-page-wrap clearfix">
+                        {% for Groupe in Groupes %}
+                            <div class="course-single">
+                                <div class="featured-post">
+                                    <div class="entry-image">
+                                        <div class="videobox">
+                                                <img src="{{asset('asset/img/images/course-grid/')}}{{Groupe.Langue.img}}" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <a href="">{{Groupe.Langue.Langue}}</a>
+                                    </div>
+                                    <p>
+                                        {{Groupe.Langue.libelle}}  
+                                    </p>
+                                    <div class="author-price">
+                                        <div class="author">
+                                        
+                                    </div>
+                                        <div class="price-wrap price-course-single">
+                                            <div class="price">
+                                                    <span class="price-now">{{Groupe.Langue.prix}} DA</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            						
+                        {% endfor %}
+                        <div class="flat-tabs">
+                            <ul class="tab-title type1 clearfix"> 
+                                <li class="item-title curriculum">
+                                    <span class="inner">Exigence</span>
+                                </li>
+                            </ul>
+                            <div class="tab-content-wrap">
+                                <div class="tab-content">
+                                    <div class="item-content">
+                                           <div class="requirements-sg text clearfix">
+                                            <ul class="request">
+                                                <li>
+                                                    Intérêt pour la classe.
+                                                </li>
+                                                <li>
+                                                   Faire ses devoirs à la maisson .
+                                                </li>
+                                                <li>
+                                                   Préparation aux test.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar-right">
+                        <div class="widget widget-class-start">
+                            <div class="widget-title">
+                                Début de classe
+                            </div>
+                            <div class="content">
+                            {% set day = '' %}
+                            {% set month = '' %}
+                            {% set year = '' %}
+                            {% set hour = '' %}
+                            {% set minutes = '' %}
+                            {% set second = '' %}
+
+                        {% for Groupe in Groupes %}
+                            {% set day = Groupe.Langue.duree|date("d") %}
+                            {% set month = Groupe.Langue.duree|date("m") %}
+                            {% set year = Groupe.Langue.duree|date("Y") %}
+                            {% set hour = Groupe.Langue.duree|date("H") %}
+                            {% set minutes = Groupe.Langue.duree|date("i") %}
+                            {% set second = Groupe.Langue.duree|date("s") %}
+                        {% endfor %}
+
+
+                                <div class="flat-counter count-time" data-day="{{day}}" data-month="{{month}}" data-year="{{year}}" data-hour="{{hour}}" data-minutes="{{minutes}}" data-second="{{second}}">
+                                    <div class="counter">
+                                        <ul>
+                                            <li class="content-counter">
+                                                <div class="wrap-bg">
+                                                    <div class="inner-bg days">
+                                                        <div class="numb-count numb cl-667eea"></div>
+                                                        <div class="name-count">jour</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="content-counter">
+                                                <div class="wrap-bg">
+                                                    <div class="inner-bg hours">
+                                                        <div class="numb-count numb cl-f0c41b"></div>
+                                                        <div class="name-count">Heure</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="content-counter">
+                                                <div class="wrap-bg">
+                                                    <div class="inner-bg minutes">
+                                                        <div class="numb-count numb cl-8b46f4"></div>
+                                                        <div class="name-count">Minute</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="content-counter">
+                                                <div class="wrap-bg">
+                                                    <div class="inner-bg seconds">
+                                                        <div class="numb-count numb cl-ff5f60"></div>
+                                                        <div class="name-count">Seconde</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                {% for Groupe in Groupes %}
+                        {% set test = 'oui' %}                    
+                        <div class="widget widget-features">
+                            <div class="widget-title">
+                                Caractéristiques du cours
+                            </div>
+                            <div class="content">
+                                <ul class="features">
+
+                                    <li>
+                                        <a href="">Étudiants</a>
+                                        <span> {{Groupe.number_etu_grp}}</span>
+                                    </li>
+                                    <li>
+                                        <a href="">Certificat</a>
+                                    {% for CourSoutien in CourSoutiens %}
+                                        {% if CourSoutien.id == Groupe.Langue.id %}
+                                            {% set test = 'non' %}
+                                        {% endif %}
+                                   {% endfor %} 
+                                        <span>{{test }}</span>
+                                    </li>
+                                    <li>
+                                        <a href="">Compétence</a>
+                                        <span>Débutante</span>
+                                    </li>
+                                    <li>
+                                        <a href="">Catégorie</a>
+                                        {% for CourSoutien in CourSoutiens %}
+                                            {% if CourSoutien.id == Groupe.Langue.id %}
+                                                <span> {{CourSoutien.Specialit.nom_specialite}}</span>
+                                            {% else %}
+                                                <span> - </span>
+                                            {% endif %}
+                                        {% endfor %}  
+                                    </li>
+                                    <li style="border-bottom: 0px;">    
+                                        <a href="">Emploi</a>
+	                                    {% for Emploi in Groupe.Emploi %}			
+                                            <span><div>{{Emploi.jour}} -
+                                            {{Emploi.heure_debut|date('H:i')}} à
+                                            {{Emploi.heure_fin|date('H:i')}}</div>	</span>									
+									{% endfor %}
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                {% endfor %} 
+
+                        <div class="related-course related-course-single">
+                            <div class="title">
+                                Cours liés
+                            </div>
+                            <div class="related-course-wrap client-style3">
+                                <div class="flat-carousel-box data-effect clearfix" data-gap="30" data-column="1" data-column2="1" data-column3="1" data-column4="1" data-dots="false" data-auto="false" data-nav="false">
+                                    <div class="owl-carousel">
+                                        {% for Languec in Languesc %}
+                                        <div class="flat-course">
+                                            <div class="featured-post">
+                                                <div class="entry-image">
+                                                    <img src="{{asset('asset/img/images/course-grid/')}}{{Languec.img}}"  alt="images">
+                                                </div>
+                                            </div>
+                                            <div class="course-content clearfix">
+                                                <div class="wrap-course-content">
+                                                    <a href="{{path('cours_single',{'id': Languec.id})}}">{{Languec.langue}}</a>
+                                                    <h4>
+                                                    {% for CourSoutien in CourSoutiens %}
+                                                        {% if CourSoutien.id == Languec.id %}
+                                                             Specialite {{CourSoutien.Specialit.nom_specialite}}
+                                                        {% endif %}
+                                                    {% endfor %}   
+                                                    </h4>
+                                                    <p>
+                                                        {{Languec.libelle}}  
+                                                    </p>
+                                                    <div class="author-info">
+                                                        <div class="author-name">
+                                                        </div>
+                                                        <div class="enroll">
+                                                            <a href="{{path('cours_single',{'id': Languec.id})}}">Inscrire</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrap-rating-price">
+                                                    <div class="meta-rate">
+                                                        <div class="price">
+                                                            <span class="price-now">{{Languec.prix}} DA</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- courses-single -->
+   
+{% include "include/footerPage.html.twig" %}
+
+{% endblock %}

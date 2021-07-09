@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}cours{% endblock %}
+
+{% block body %}
+
+{% include "include/headerPage.html.twig" %}
+<style>
+.page-link{
+        color: #fbb545;
+
+}
+.page-item.active .page-link {
+
+    background-color: #fbb545 !important;
+    border-color: #fbb545 !important;
+}
+.page-link:hover {
+    color: #fbb5457a;
+    }
+
+</style>
+
+    <div class="course-grid">
+        <div class="container">
+            <div class="flat-portfolio">
+                <ul class="flat-filter-isotype">
+                    <li class="active"><a href="#" data-filter="*">Tous</a></li>
+                    <li><a href="#" data-filter=".soutien">Cours de soutien</a></li>
+                    <li><a href="#" data-filter=".niveau"> Cours de niveau </a></li>
+                </ul>
+            </div>
+
+
+            <div class="flat-courses clearfix isotope-courses">
+
+            {# {% for Groupe in Groupes %}
+                {{Groupe.Langue.langue}}
+                {{Groupe.Langue.id}}
+            {% endfor %}<br> #}
+                {% for Groupe in Groupes %}
+                        {% set test = 'niveau' %}
+
+                    {% for CourSoutien in CourSoutiens %}
+                    {% if CourSoutien.id == Groupe.Langue.id %}
+                        {% set test = 'soutien' %}
+                        {% endif %}
+                    {% endfor %}  
+
+                    <div class="course clearfix {{test}} ">    
+                        <div class="flat-course">
+                            <div class="featured-post post-media">
+                                <div class="entry-image pic">
+                                    <img src="{{asset('asset/img/images/course-grid/')}}{{Groupe.Langue.img}}" alt="images">
+                                    <div class="hover-effect"></div>
+                                    <div class="links">
+                                        <a href="{{path('cours_single',{'id': Groupe.Langue.id})}}">Aperçu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-content clearfix">
+                                <div class="wrap-course-content">
+                                    <h4>
+                                        <a href="{{path('cours_single',{'id': Groupe.Langue.id})}}">{{Groupe.Langue.langue}}</a>
+                                    </h4>
+                                    <p>
+                                       {{Groupe.Langue.libelle}}                             
+                                    </p>
+                                    <div class="author-info">
+                                        <div class="author-name">
+                                            {% for CourSoutien in CourSoutiens %}
+                                                {% if CourSoutien.id == Groupe.Langue.id %}
+                                                 Specialite {{CourSoutien.Specialit.nom_specialite}}
+                                                {% endif %}
+                                            {% endfor %}                                        
+                                        </div>
+                                    <div class="enroll">
+                                            <a href="{{path('cours_single',{'id': Groupe.Langue.id})}}">Inscrire</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap-rating-price">
+                                    <div class="meta-rate">
+                                        <div class="price">
+                                            <span class="price-now">{{Groupe.Langue.prix}} DA</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                {% endfor %}
+            </div> 
+
+	        <div class="pagination">
+                {{ knp_pagination_render(pagination) }}
+			</div>	
+        </div>
+    </div><!-- course-grid -->
+
+{% include "include/footerPage.html.twig" %}
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="sign_in_up_bg">
+	<!-- Signup Start -->
+	<div class="container">
+		{% if app.request.hasPreviousSession %}
+            {% for type, messages in app.session.flashbag.all() %}
+                {% for message in messages %}
+                    <div class="flash-{{ type }}">
+                        <div class="alert alert-success">
+                             {{ message }}
+                        </div>                    
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+		<div class="row justify-content-lg-center justify-content-md-center">
+			<div class="col-lg-12">
+				<div class="main_logo25" id="logo">
+				<a href="{{path('home')}}"><img src="{{asset('asset/img/images/logo/07.png')}}" alt=""></a>
+				<a href="{{path('home')}}"><img class="logo-inverse" src="{{asset('asset/img/images/logo/07.png')}}" alt=""></a>				</div>
+			</div>
+		
+			<div class="col-lg-6 col-md-8">
+				<div class="sign_form">
+					<h2><label for="username">Réinitialisation mot de pass</label></h2>
+            {{ form_start(form, { 'action': path('fos_user_resetting_reset', {'token': token}), 'attr': { 'class': 'fos_user_resetting_reset' } }) }}
+						<div class="ui search focus mt-50">
+
+							<div class="ui left icon input swdh95">
+                                <h3><label for="inputEmail4">{{'resetting.New_Password'|trans}}</label></h3>
+							</div>
+
+                            <div class="ui left icon input swdh95">
+                                {{ form_widget(form.plainPassword.first, {'attr': {'class': 'form-control', 'autocomplete': 'off'}}) }}
+                                {{ form_errors(form.plainPassword.first) }}
+							</div>
+                            <br><br>
+                            <div class="ui left icon input swdh95">
+                                <h3><label for="inputEmail4">{{'resetting.Repeat_the_new_password'|trans}}</label></h3>
+							</div>
+
+                            <div class="ui left icon input swdh95">
+                                {{ form_widget(form.plainPassword.second, {'attr': {'class': 'form-control', 'autocomplete': 'off'}}) }}
+                                {{ form_errors(form.plainPassword.second) }}
+							</div>
+						</div>
+                            <input class="login-btn" type="submit" value="{{ 'resetting.reset.submit'|trans }}" />
+            {{ form_end(form) }}
+					<p class="mb-0 mt-30">Retourner <a href="{{ path('fos_user_security_login') }}">Se connecter</a></p>
+				</div>
+				<div class="sign_footer"><img src="images/sign_logo.png" alt="">© 2020 <strong>psc</strong>. Tous les droits sont réservés.</div>
+			</div>				
+		</div>				
+	</div>	
+</div>	

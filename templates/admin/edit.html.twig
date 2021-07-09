@@ -1,0 +1,41 @@
+{% extends '@EasyAdmin/default/layout.html.twig' %}
+
+
+
+{% block content_title %}
+    {% apply spaceless %}
+        {% set _default_title = 'Répondre' %}
+        {{ _entity_config.new.title is defined ? _entity_config.new.title|trans(_trans_parameters) : _default_title }}
+    {% endapply %}
+{% endblock %}
+
+    {% block main %}
+
+            {{ form_start(form) }} 
+    
+                {{ form_widget (form.pseudo, {'attr': {'autocomplete': 'off','value' : Pseudo }}) }}
+
+
+                {{ form_widget (form.email, {'attr': {'autocomplete': 'off','value' : email }}) }}
+
+            
+                {{ form_row(form.Message, {'attr': {'class': 'form-control','autocomplete': 'off','placeholder': "Message"}}) }}
+            <br>
+                {{ form_row(form.submit, {'attr':{'class': 'btn'}}) }}
+         
+
+            {{ form_end(form) }}
+                    
+
+    {% endblock %}
+
+
+{% block body_javascript %}
+    {{ parent() }}
+
+    <script>
+$('#contact1_pseudo').hide();    
+$('#contact1_email').hide();    
+    </script>
+
+{% endblock %}

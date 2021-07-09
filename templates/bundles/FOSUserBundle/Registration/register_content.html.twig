@@ -1,0 +1,102 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+	<div class="sign_in_up_bg">
+		<div class="container">
+			<div class="row justify-content-lg-center justify-content-md-center">
+				<div class="col-lg-12">
+					<div class="main_logo25" id="logo">
+							<a href="{{path('home')}}"><img src="{{asset('asset/img/images/logo/07.png')}}" alt=""></a>
+
+					</div>
+				</div>
+			
+				<div class="col-lg-6 col-md-8">
+					<div class="sign_form">
+						<h2>Bienvenue chez psc</h2>
+						<p>Inscrivez-vous et commencez à apprendre!</p>
+        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+								
+							<div class="ui search focus">
+								<div class="ui left icon input swdh11 swdh19">
+									{{ form_widget(form.lastName, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': "nom de famille"}}) }}
+									{{ form_widget(form.firstName, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': "Prénom"}}) }}
+								</div>
+							</div>
+
+							<div class="ui search focus mt-15">
+								<div class="ui left icon input swdh11 swdh19">
+									{{ form_widget(form.username, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': "Nom d'utilisateur"}}) }}
+									{{ form_widget(form.gender, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off'}}) }}
+								</div>
+								<div>
+									<h3 style="color: red;">{{ form_errors(form.username) }}</h3>
+								</div>
+							</div>
+
+							<div class="ui search focus mt-15">
+								<div class="ui left icon input swdh11 swdh19">
+                                    {{ form_widget(form.email, {'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','required': false ,'placeholder': 'email'}}) }}
+								</div>
+								<div>
+									<h3 style="color: red;">{{ form_errors(form.email) }}</h3>
+								</div>
+							</div>
+
+							<div class="ui search focus mt-15">
+								<div class="ui left icon input swdh11 swdh19">
+                                    {{ form_widget(form.plainPassword.first,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'mot de passe'}}) }}
+                                    {{ form_widget(form.plainPassword.second ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'Répéter le mot de passe'}}) }}<br><br>
+								</div>
+								<div>
+									<h3 style="color: red;">{{ form_errors(form.plainPassword.first) }}</h3>
+								</div>
+							</div>
+
+	                        <div class="ui search focus mt-15">
+								<div class="ui left icon input swdh11 swdh19">
+                                    {{ form_widget(form.phone ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'téléphone'}}) }}<br><br>
+									{{ form_widget(form.address ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'adresse'}}) }}<br><br>
+								</div>
+								<div>
+									<h3 style="color: red;">{{ form_errors(form.phone) }}</h3>
+								</div>
+							</div>	
+
+                            <div class="ui search focus mt-15">
+								<div class="ui left icon input swdh11 swdh19">
+                                    {{ form_widget(form.birthPlace ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'Lieu de naissance'}}) }}<br><br>
+                                    {{ form_widget(form.birthdate ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'date de naissance'}}) }}<br><br>
+								</div>
+							</div>
+
+                            <div class="ui search focus mt-15">
+								<div class="ui left icon input swdh11 swdh19">
+                                    {{ form_widget(form.nom_pere ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'nom pere'}}) }}<br><br>
+                                    {{ form_widget(form.nom_mere ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'nom mere'}}) }}<br><br>
+								</div>
+							</div>
+							 
+							 <div class="ui search focus mt-15">
+								<div class="ui left icon input swdh11 swdh19">
+                                    {{ form_widget(form.num_tel_pere ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'num tel pere'}}) }}<br><br>
+                                    {{ form_widget(form.num_tel_mere ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'num tel mere'}}) }}<br><br>
+								</div>
+							</div>
+
+							 <div class="ui search focus mt-15">
+								<div class="ui left icon input swdh11 swdh19">
+                                    {{ form_widget(form.profession_pere ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'profession pere'}}) }}<br><br>
+                                    {{ form_widget(form.profession_mere ,{'attr': {'class': 'prompt srch_explore', 'autocomplete': 'off','placeholder': 'profession mere'}}) }}<br><br>
+								</div>
+							</div>
+                         <input class="login-btn" type="submit" value="{{ 'registration.submit'|trans }}" />
+                    	<p class="sgntrm145">En vous inscrivant, vous acceptez notre <a href="terms_of_use.html">Terms of Use</a> et <a href="terms_of_use.html">Politique de confidentialité</a>.</p>
+						<p class="mb-0 mt-30">Vous avez déjà un compte? <a href="{{ path('fos_user_security_login') }}">S'identifier</a></p>
+					</div>
+					{{ form_end(form) }}
+					<div class="sign_footer"><img src="images/sign_logo.png" alt="">© 2020 <strong>psc</strong>. Tous les droits sont réservés.</div>
+				</div>				
+			</div>				
+		</div>				
+	</div>
+	<!-- Signup End -->	

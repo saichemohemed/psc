@@ -1,0 +1,569 @@
+lang: ar
+
+Menu:
+    MENU: قائمة 
+    log_in: تسجيل الدخول
+    Registerp: إنشاء حساب 
+    Registerm: لوحة القيادة
+    Profile1: إستقبال
+    Edit_Profile1: المقرر التعليمي
+    Change_password1: عرض
+    Profile: Profile
+    Edit_Profile: Edit_Profile
+    Change_password: Change password
+    Disconnect: الخروج
+    Dashboard: لوحة القيادة
+    website: حدث
+    personal_agenda: إتصال
+    Appointment_unconfirmed: الموعد غير مؤكد
+    Appointment_confirmed: الموعد تم تأكيد 
+    Appointment_Of_the_Day: مواعيد اليوم
+    My_Appointments: مواعيدي
+    Waiting_appointment:  مواعيد في انتظار 
+    Establishment: مؤسسة
+    Reason_for_consultation: سبب إستشارة  
+    My_schedule: اوقات عملي
+
+Doc:
+    Search_Filter: مرحبًا بكم في مدرسة PSC
+    title: المكان المثالي لتطوير دراستك.
+    Description: اقرأ المزيد
+    VISIT_WEBSITE: زيارة الموقع
+    MAKE_AN_APPOINTMENT: إحجز موعد
+
+Home:
+    Titel:  دورات اللغة حسب المستوى
+    Titel.Span:  يقدم مركز حلول المدارس الاحترافية أيضًا دورات في اللغات الأجنبية حسب المستوى. 
+    Titel.H1:  دروس التقوية
+    Paragraph.Span: تقدم مدرسة مركز الحلول الاحترافية العديد من دروس التعزيز لجميع مراحل المدرسة المتوسطة والنهائية.
+
+Waiting_appointment:
+    Waiting_appointment:  المواعيد في انتظار
+
+DataTable:
+    sEmptyTable:     ليست هناك بيانات متاحة في الجدول
+    sInfo:           إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل
+    sInfoEmpty:      يعرض 0 إلى 0 من أصل 0 سجل
+    sInfoFiltered:   (منتقاة من مجموع _MAX_ مُدخل)
+    sLengthMenu:     أظهر _MENU_ مدخلات
+    sLoadingRecords: جارٍ التحميل...
+    sProcessing:     جارٍ التحميل...
+    sSearch:    ابحث 
+    sZeroRecords:    لم يعثر على أية سجلات
+    oPaginate_sFirst:    الأول
+    oPaginate_sLast:     الأخير
+    oPaginate_sNext:     التالي
+    oPaginate_sPrevious: السابق
+    oAria_sSortAscending:   تفعيل لترتيب العمود تصاعدياً
+    oAria_sSortDescending:  تفعيل لترتيب العمود تنازلياً
+    N°: رقم
+    Lastname: اسم
+    Firstname: اللقب
+    date_hour: وقت والتاريخ
+    pattern: الدافع
+    status: الوضع
+    validate: التحقق من الصحة
+    remove: إزالة
+    To_Etudiant_record: الى سجل المريض 
+
+HospitalCenter:
+    Name_Establishments: اتصل بنا
+    Phone: اجعلها أبسط! 
+    Fax: عرض
+    Address: "تعود فكرة إنشاء مدرسة تدعم التلاميذ والطلاب إلى 5 سنوات. منذ وجودها يعتبر بمثابة دعم تعليمي للمستويات. CEM و Lycée ، معدل نجاح المدرسة بعيد عن أن يكون عرضيًا ، ويرجع ذلك إلى جهود أعضاء هيئة التدريس والإدارة المتحمسين: تقدم مدرسة PSC (Pro Solution Center) خدمات متنوعة بما في ذلك:
+                         -دعم دورات لمستويات CEM و Lycée.
+                         - التدريب على اللغات."
+    Wilaya: "على الرغم من الخدمات التي تقدمها هذه الأخيرة ، لا تزال PSC تعاني من بعض المشكلات المتعلقة غالبًا بالإدارة والاتصالات ، بما في ذلك:"
+    City: "صعوبة الوصول إلى ملفات المتعلم وإضاعة الكثير من الوقت في البحث عنها ، وأحيانًا يتم فقد بعض الملفات."
+    Type_Establishments: نوع المنشآت
+    website: "صعوبة مواكبة الدفعات الشهرية والاتصال بهم قبل نهاية الشهر تأخير في تحصيل الرسوم الشهرية."
+
+Pattern:
+    Add: أضافة
+    Remove: إزالة
+
+
+calendar_hour:
+    choose_the_working_time: لماذا أخترتنا؟
+    minutes: شهادة
+    hour: عند دراسة اللغات في مدرستنا ، في نهاية الدراسة نصدر لك شهادة.
+    Work_schedule: إنها مؤسسة مدارة بشكل مباشر ومفتوحة للجميع ، مع احترام الجميع ، ومبادئ الجميع ودين الجميع.
+    title: قانون المدرسة
+    Start_date: القدرة على تحمل التكاليف
+    end_date: أسعارنا في متناول الجميع.
+    background: PSC هو الأفضل !!
+    text_color: "التعليم في مدرستنا PSC هو العملية التي تسهل التعلم أو اكتساب المعرفة والمهارات والقيم والمعتقدات والعادات. يعني أيضًا مساعدة الأشخاص على تعلم عمل الأشياء وتشجيعهم على التفكير ،
+
+                                             إنه يطور فينا منظورًا للحياة. يساعدنا في تكوين الآراء وفهم الأشياء بشكل أفضل في الحياة."
+    the_days_of_this_week: الأحداث الأخيرة
+    the_next_period: اقرا الان
+    add_work_schedule: قيمنا
+    modify_hour: توسيع القيم خارج الفصل الدراسي من خلال التأكد من أن المهارات والمفاهيم التي يتم تدريسها في الفصل الدراسي مفيدة حقًا في العالم خارج المدرسة. القيم القوية هي جوهر مدرستنا .
+    time_date_start: استراتيجيتنا
+    time_end_date: "توفير بيئة ودية ومتعددة الثقافات يمكن للطلاب من خلالها تعلم المهارات الأساسية والمحتوى الأكاديمي الأساسي بنجاح ، وتطوير مهاراتهم الاجتماعية."
+    start_time: مهمتنا
+    end_time: "إلهام الطلاب لتحقيق أهدافهم الشخصية والمحتملة من خلال أنشطة مناسبة تنمويًا وفردية وشخصية بناءً على أداء كل طالب واهتمامه الأكاديمي."
+    edit_hour: تعديل الساعة
+    remove_hure: إزالة
+    Are_you_sure: هل أنت متأكد؟
+    msg: هل أنت متأكد أنك تريد حذف هذه السجلات؟ لا يمكن إلغاء هذه العملية.
+    cancel: إلغاء
+    remove: حذف
+
+    
+calendar_Appointment:
+    Add_Appointment: مدرسة
+    Username_or_Email_or_Phone: اسم المستخدم أو البريد الإلكتروني أو الهاتف
+    choice_of_time: اختيار الوقت
+    Date_and_hour: التاريخ والساعة
+    confirm: تؤكد
+    Edit_Appointment: تعديل الموعد
+    title: عنوان
+    date: تاريخ
+    edit: تعديل
+    delete_appointment: حذف الموعد
+    Are_you_sure: هل أنت متأكد؟
+    msg: هل أنت متأكد أنك تريد حذف هذه السجلات؟ لا يمكن إلغاء هذه العملية.
+    cancel: إلغاء
+    remove: حذف
+
+
+calendar_Reminding:
+    Add_Reminding: اضف ملاحظة
+    Username_or_Email_or_Phone: اسم المستخدم أو البريد الإلكتروني أو الهاتف
+    hour: ساعة
+    Date_and_hour_start:  التاريخ والساعة بداية
+    End_date_and_time: تاريخ ووقت الانتهاء
+    state: حالة
+    write: ... اكتب 
+    emergency: حالة طوارئ
+    important: مهم
+    intermediate: متوسط
+    choose_status: اختر الحالة
+    edit_Reminding: تعديل تذكير
+    New_start_time: وقت بدء جديد
+    New_end_time: وقت انتهاء جديد  
+    New_Date_and_time: التاريخ والوقت الجديد
+    New_End_date_and_time: تاريخ ووقت انتهاء جديد
+    edit: تعديل
+    delete_Reminding: حذف الموعد
+    Are_you_sure: هل أنت متأكد؟
+    msg: هل أنت متأكد أنك تريد حذف هذه السجلات؟ لا يمكن إلغاء هذه العملية.
+    cancel: إلغاء
+    remove: حذف
+
+
+
+
+
+
+Profile:
+    show.mobile_number: رقم الهاتف المحمول
+    show.Email_Address: عنوان البريد الإلكتروني
+    show.Username: اسم المستخدم 
+    show.Profession_number: رقم المهنة
+    show.Date_of_Birth: تاريخ الولادة
+    show.Place_of_birth: مكان الولادة
+    show.Sex: الجنس
+    show.Address_of_the_medical_cabin: عنوان الكابينة الطبية
+    show.Account_opening_date: تاريخ فتح الحساب
+    show.last_connection_on: آخر اتصال في
+    show.Doctor_Profile: الملف الشخصي للطبيب
+    edit: رقم الهاتف المحمول 
+
+AppointmentEtudiant:
+    Appointment_Of_the_Day: مواعيد اليوم
+    pending_Consultation: في انتظار موعد
+    to_Etudiant_record: إلى مجلد المريض
+
+
+medical_personal_history:
+    Doctor_Dealing: الطبيب المعالج
+    list_of_Doctors_Dealings: قائمة الاطباء المعالجون
+    Etudiant_Record: سجل المريض
+    Personal: شخصي
+    Family: العائلة
+    Physiological: وظائفي
+    Obstetricians: أطباء التوليد
+    Psychiatriques: الطب النفسي
+    allergies: الحساسية
+    Surgical: الجراحة
+    Medical: طبي 
+    summary: ملخص
+    Menarche:  بداية الحيض
+    Menopause: انقطاع الحيض
+    Dysmenorrhea: عسر الطمث
+    Dyspareunie: عسر الهضم
+    Duration_and_type_of_menstrual_cycle: مدة ونوع الدورة الشهرية
+    Duration_of_menstruation: مدة الحيض
+    abundance: وفرة
+    Initial: مبدئي
+    Other: آخر
+    Gesture: لفتة
+    Parity: التكافؤ
+    Cesarean: القيصرية
+    Abortions: الإجهاض
+    Type_of_contraception: نوع موانع الحمل
+    Obstetric_antiossidante: مضادات الحموضة التوليدية
+    Psychiatric: الطب النفسي
+    Psycho_traumatic: الصدمة النفسية
+    Toxic: سام 
+    Prisoners: السجناء
+    Psychomotor_development: التطور النفسي الحركي
+    Traumatic_stories: قصص صادمة
+    Update_History_medical:  تحديث السجل الطبي 
+
+RegistrationType:
+    gender:
+        placeholder: '...أختر'
+        choices:
+            Women: أنثى 
+            Man: ذكر 
+
+ProfileType:
+    gender:
+        placeholder: '...أختر'
+        choices:
+            Women: أنثى 
+            Man: ذكر 
+
+HospitalCenterType:
+    gender:
+        btn_submit: تحديث
+        placeholder: '...أختر'
+        wilaya:
+            Adrar: أدرار 
+            Chlef: الشلف                
+            Laghouat: الأغواط                
+            Oum_bouaghi: أم البواقي            
+            Batna: باتنة                
+            Bejaia: بجاية                
+            Biskra: بسكرة                
+            Bechar: بشار                
+            Blida: البليدة                
+            Bouira: البويرة                
+            Tamanrasset: تمنراست                
+            Tebessa: تبسة                
+            Tlemcen: تلمسان                
+            Tiaret: تيارت                
+            Tizi_ouzou: تيزي وزو               
+            Alger: الجزائر                
+            Djelfa: الجلفة                
+            Jijel: جيجل                
+            Setif: سطيف                
+            Saida: سعيدة                
+            Skikda: سكيكدة                
+            Sidi_Bel_Abbes: سيدي بلعباس                
+            Annaba: عنابة                
+            Guelma: قالمة                
+            Constantine: قسنطينة                
+            Medea: المدية                
+            Mostaganem: مستغانم                
+            Msila: المسيلة               
+            Mascara: معسكر                
+            Ouargla: ورقلة                
+            Oran: وهران                
+            El_Baydh: البيض                
+            Illizi: إليزي                
+            Bordj_Bou_Arreridj: برج بوعريريج                
+            Boumerdes: بومرداس                
+            El_Taref: الطارف                
+            Tindouf: تندوف                
+            Tissemsilt: تسمسيلت                
+            El_Oued: الوادي            
+            Khenchla: خنشلة                
+            Souk_Ahrass: سوق أهراس             
+            Tipaza: تيبازة                
+            Mila: ميلة                
+            Aïn_Defla: عين الدفلى                
+            Nâama: النعامة                
+            Aïn_Temouchent: عين تموشنت                
+            Ghardaïa: غرداية                
+            Relizane: غليزان 
+
+        Type_Establishments:    
+            doctors_office: مكتب الطبيب  
+            group_medical_office: مكتب المجموعة الطبية
+            clinical: عيادة
+            radiology_center: مركز الأشعة             
+
+
+profile_user:
+    ConfirmationAppointment:
+        Your_appointment_on: موعدك في
+        Confirmed: تم تأكيد
+        Doctor: طبيب
+        Address: عنوان 
+        Specialty: تخصص
+        Reason: السبب
+        informations: المعلومات
+        edit: تعديل
+        cancel: الغاء
+        No_confirmed_appointment_found: لم يتم العثور على موعد مؤكد
+        msg: هل أنت متأكد أنك تريد حذف هذا الموعد؟
+
+    ConfirmationShow:
+        start_date: تاريخ البدء
+        end_date: تاريخ الانتهاء
+        pattern: السبب
+        status: الحالة
+        confirmed: تم تأكيد
+
+    waitingConfirmationAppointment:
+        Your_appointment_on: موعدك في
+        Confirmed: تم تأكيد
+        Doctor: طبيب
+        Address: عنوان 
+        Specialty: تخصص
+        Reason: السبب
+        waiting: في الانتظار
+        title: قائمة المواعيد المعلقة
+
+    Profile_Etudiant:
+        Phone: هاتف
+        Emergency_telephone: هاتف الطوارئ
+        fax: الفاكس
+        Chifae_Card_Num: بطاقة الشفاء
+        Family_situation: الوضع العائلي
+        referenced_by: تمت الإشارة إليه بواسطة
+        Etudiant_Profile: الملف الشخصي للمريض
+        username: اسم المستخدم
+        Last_name_and_first_name: اسم العائلة والاسم الأول
+        Email: البريد الإلكتروني
+        Date_of_Birth:  تاريخ الميلاد
+        Place_of_birth: مكان الميلاد
+        sex: الجنس
+        Address: عنوان
+        Origin: الأصل
+        last_connection: اخر اتصال
+
+Searche:
+    SearcheDoctor: الطبيب ، مؤسسة طبية ، تخصص ...
+    SearcheWilaya: الى اين؟
+    Research: بحث
+
+
+Doctor:
+    error:
+        mgs1: آسف -
+        mgs2: أو
+        mgs3: '- غير موجود'
+        mgs4: هذا الاسم أو الولاية أو هذا التخصص غير موجود جرب باسم آخر أو تحقق مما إذا كنت قد كتبت الاسم بشكل صحيح.
+        mgs5: الصفحة الرئيسية
+        mgs6: قم بعمل موعد
+        mgs7: لتحديد موعد اختر توقيت الساعة 
+
+Confirmation:
+    choose_your_motif: اختيار الاسباب
+    Etudiant_information: معلومات المريض
+    It_s_over: انتهى  
+    Practitioner: صاحب مهنة
+    Place_of_consultation: مكان الاستشارة
+    Specialty: تخصص
+    Date_and_hour: التاريخ والساعة
+    Choice_of_reason: اختيار السبب
+    msg: لمواصلة أملء حقل اختيار السبب
+    next: التالي
+    Lastname: اسم العائلة
+    Firstname: الاسم الاول
+    E-mail: البريد الإلكتروني
+    gender: جنس
+    Phone: هاتف
+    previous: السابق
+    login: تسجيل الدخول
+    register: تسجيل
+    msg1: أكد موعدك   
+    Date: تاريخ
+    reason: السبب
+    make_an_appointment: إحجز موعد
+    msag: '!تم حجز موعد بنجاح'
+    msag1: حجز موعد مع
+    msag2: في 
+
+
+admin:
+    User:
+        User: مستخدم
+        title: قائمة المستخدمين
+        fields:
+            id: id
+            username: اسم المستخدم
+            firstName: الاسم الاول
+            lastName: اسم العائلة
+            enabled: نشط
+            phone: هاتف
+            gender: جنس
+            email: البريد الإلكتروني
+            firstLoginToday: أول تسجيل الدخول اليوم
+        form:
+            firstName: الاسم الاول
+            lastName: اسم العائلة
+            username: اسم المستخدم
+            email: البريد الإلكتروني
+            imageFile: ملف الصورة
+            updatedAt: تم التحديث في
+            phone: هاتف
+            enabled: نشط
+            lastLogin: آخر تسجيل دخول
+            plainPassword: كلمة المرور 
+            roles: دور
+            ADMIN: مشرف
+            Doctor: الطبيب
+            Etudiant: المريض
+    admin:
+        admin: مشرف
+        title: قائمة المشرفين
+        fields:
+            id: id
+            username: اسم المستخدم
+            firstName: الاسم الاول
+            lastName: اسم العائلة
+            enabled: نشط
+            phone: هاتف
+            gender: جنس
+            email: البريد الإلكتروني
+            firstLoginToday: أول تسجيل الدخول اليوم
+        form:
+            username: اسم المستخدم
+            firstName: الاسم الاول
+            lastName: اسم العائلة
+            enabled: نشط
+            phone: هاتف
+            gender: جنس
+            email: البريد الإلكتروني
+            firstLoginToday: أول تسجيل الدخول اليوم
+            imageFile: ملف الصورة
+            updatedAt: ملف صورة محدث
+            plainPassword: كلمة المرور 
+            roles: دور
+            ADMIN: مشرف
+            
+    Doctor:
+        fields:
+            id: id
+            username: اسم المستخدم
+            firstName: الاسم الاول
+            lastName: اسم العائلة
+            enabled: نشط
+            phone: هاتف
+            email: البريد الإلكتروني
+            Professionalnumber: الرقم المهني
+            medicaloffice : مكتب طبي
+            gender: جنس
+            specialty: تخصص
+            firstLoginToday: أول تسجيل الدخول اليوم
+            accountopeningdate: تاريخ فتح الحساب
+            workingtime: وقت العمل
+        form:
+            username: اسم المستخدم
+            firstName: الاسم الاول
+            lastName: اسم العائلة
+            enabled: نشط
+            phone: هاتف
+            email: البريد الإلكتروني
+            Professionalnumber: الرقم المهني
+            medicaloffice : مكتب طبي
+            gender: جنس
+            specialty: تخصص
+            imageFile: ملف الصورة
+            updatedAt: ملف صورة محدث
+            accountopeningdate: تاريخ فتح الحساب
+            plainPassword: كلمة المرور 
+            roles: دور
+            Doctor: طبيب
+
+    Etudiant:
+        Etudiant: طالب 
+        title: قائمة طلاب
+        fields:
+            id: id
+            username: اسم المستخدم
+            firstName: الاسم الاول
+            lastName: اسم العائلة
+            enabled: نشط
+            phone: هاتف
+            email: البريد الإلكتروني
+            gender: جنس
+            firstLoginToday: أول تسجيل الدخول اليوم
+        form:
+            username: اسم المستخدم
+            firstName: الاسم الاول
+            lastName: اسم العائلة
+            enabled: نشط
+            phone: هاتف
+            email: البريد الإلكتروني
+            gender: جنس
+            imageFile: ملف الصورة
+            updatedAt: ملف صورة محدث
+            plainPassword: كلمة المرور 
+            roles: دور
+            Etudiant: المريض
+
+
+    Calendar:
+        Calendar: التقويم
+        title: قائمة التقويم
+        fields:
+            id: id
+            bgColor: لون الخلفية
+            type: نوع
+            service: الخدمات
+        form:
+            bgColor: لون الخلفية
+            type: نوع
+            service: الخدمات
+
+    Evenement:
+        Evenement: حدث
+        title: قائمة حدث
+        fields:
+            id: id
+            title: العنوان
+            startDatetime: وقت بدء التاريخ
+            endDatetime: وقت تاريخ الانتهاء
+            bgColor: لون الخلفية
+            fgColor: لون الخط
+        form:
+            title: العنوان
+            startDatetime: وقت بدء التاريخ
+            endDatetime: وقت تاريخ الانتهاء
+            bgColor: لون الخلفية
+            fgColor: لون الخط    
+
+    Service:
+        Service: مصلحة
+        title: قائمة الخدمات
+        fields:
+            id: id
+            name: اسم
+            updateDate: تاريخ التحديث
+            adminCreated: مشرف تم إنشاؤه
+            responsible: المسؤول
+        form:
+            name: اسم
+            Description: وصف
+            adminCreated: مشرف تم إنشاؤه
+            responsible: المسؤول
+            updateDate: تاريخ التحديث
+
+
+    
+       
+Registration_Doctor:
+    Lastname: إسم العائلة
+    Firstname: الاسم
+    username: اسم المستخدم 
+    Email: البريد الإلكتروني
+    password: كلمه السر
+    Repeat_password: تأكيد كلمة المرور
+    Phone: الهاتف المحمول
+    Gender: الجنس
+    specialization: اختصاص
+    company: اسم المؤسسة
+    title: عنوان
+    Accept_the_terms_and_policy: قبول الشروط والسياسة
+    Already_have_an_account: هل لديك حساب
+    Download_pdf_terms_and_conditions: تنزيل شروط وأحكام pdf
+    login: تسجيل الدخول
+
+

@@ -1,0 +1,121 @@
+
+{% include "include/headerDashboard.html.twig" %}
+	<!-- Body Start -->
+	<div class="wrapper _bg4586">
+		<div class="_216b01">
+			<div class="container">	
+		{% if app.request.hasPreviousSession %}
+            {% for type, messages in app.session.flashbag.all() %}
+                {% for message in messages %}
+                    <div class="flash-{{ type }}">
+                        <div class="alert alert-success">
+                             {{ message }}
+                        </div>                    
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}		
+				<div class="row justify-content-md-center">
+					<div class="col-md-10">
+						<div class="section3125 rpt145">							
+							<div class="row">						
+								<div class="col-lg-7">
+									<a href="#" class="_216b22">										
+									</a><pre>
+                                    </pre><pre>
+                                    </pre>
+									<div class="dp_dt150">						
+										<div class="img148"> 
+											<img src="{{asset(app.user.imagePath )}}{{app.user.imageName }}" alt="">										
+										</div>
+										<div class="prfledt1">
+											<h2>{{app.user.lastName}} {{app.user.firstName}}</h2>
+											<span>{{app.user.email}}</span>
+										</div>										
+									</div>
+									<ul class="_ttl120">
+										<li>
+											<div class="_ttl121">
+												<div class="_ttl122">Cours</div>
+												<div class="_ttl123">3</div>
+											</div>
+										</li>
+                                		<li>
+											<div class="_ttl121">
+												<div class="_ttl122">date de création du compte</div>
+												<div class="_ttl123">{{app.user.datecreated|date("m/d/Y")}}</div>
+											</div>
+										</li>
+										<li>
+											<div class="_ttl121">
+												<div class="_ttl122">téléphone</div>
+												<div class="_ttl123">{{app.user.phone}}</div>
+											</div>
+										</li>
+										<li>
+											<div class="_ttl121">
+												<div class="_ttl122">Dernière connexion</div>
+												<div class="_ttl123">{{app.user.lastLogin|date("m/d/Y")}}</div>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+								<div class="col-lg-5">
+							
+									<div class="rgt-145">
+										<ul class="tutor_social_links">
+											<li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#" class="ln"><i class="fab fa-linkedin-in"></i></a></li>
+											<li><a href="#" class="yu"><i class="fab fa-youtube"></i></a></li>
+										</ul>
+									</div>
+			
+									
+								</div>													
+							</div>							
+						</div>							
+					</div>															
+				</div>
+			</div>
+		</div>
+		<div class="_215b15">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">						
+						<div class="course_tabs">
+							<nav>
+								<div class="nav nav-tabs tab_crse" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-selected="true">À propos de moi</a>
+								</div>
+							</nav>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="_215b17">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="course_tab_content">
+							<div class="tab-content" id="nav-tabContent">
+								<div class="tab-pane fade show active" id="nav-about" role="tabpanel">
+									<div class="_htg451">
+										<div class="_htg452">
+											<h3>À propos de moi</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque nibh sed ligula blandit, quis faucibus lorem pellentesque. Suspendisse pulvinar dictum pellentesque. Vestibulum at sagittis lectus, sit amet aliquam turpis. In quis elit tempus, semper justo vitae, lacinia massa. Etiam sagittis quam quis fermentum lacinia. Curabitur blandit sapien et risus congue viverra. Mauris auctor risus sit amet cursus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat sodales massa, in viverra dolor condimentum ut. In imperdiet, justo nec volutpat blandit, tellus justo tempor quam, sed pretium nibh nunc nec mauris. Mauris vel malesuada magna. Quisque iaculis molestie purus, non luctus mauris porta id. Maecenas imperdiet tincidunt mauris vestibulum vulputate. Aenean sollicitudin pretium nibh, et sagittis risus tincidunt ac. Phasellus scelerisque rhoncus massa, ac euismod massa pharetra non. Phasellus dignissim, urna in iaculis varius, turpis libero mollis velit, sit amet euismod arcu mi ac nibh. Praesent tincidunt eros at ligula pellentesque elementum. Fusce condimentum enim a tellus egestas, sit amet rutrum elit gravida. Pellentesque in porta sapien. Fusce tristique maximus ipsum et mollis. Sed at massa ac est dapibus vulputate at eu nibh.</p>
+										</div>																	
+									</div>							
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+{% include "include/footerDashboard.html.twig" %}
+
+	</div>

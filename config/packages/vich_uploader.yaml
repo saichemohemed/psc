@@ -1,0 +1,16 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        user_img:
+            uri_prefix: /images/user_profile
+            upload_destination: '%kernel.project_dir%/public/images/user_profile'
+        Evenement_img:
+            uri_prefix: /images/Evenement_img
+            upload_destination: '%kernel.project_dir%/public/images/Evenement_img'        
+        paiement_img:
+            uri_prefix: /images/paiement_img
+            upload_destination: '%kernel.project_dir%/public/images/paiement_img'
+        Langue_img:
+            uri_prefix: /images/Langue_img
+            upload_destination: '%kernel.project_dir%/public/images/Langue_img'

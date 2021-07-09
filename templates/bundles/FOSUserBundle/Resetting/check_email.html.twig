@@ -1,0 +1,56 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+
+<div class="coming_soon_style">
+	
+	<!-- Body Start -->
+	<div class="">		
+		<div class="container">
+		{% if app.request.hasPreviousSession %}
+            {% for type, messages in app.session.flashbag.all() %}
+                {% for message in messages %}
+                    <div class="flash-{{ type }}">
+                        <div class="alert alert-success">
+                             {{ message }}
+                        </div>                    
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+			<div class="row">
+				<div class="col-md-12">
+					<div class="cmtk_group">
+						<div class="ct-logo">
+							<a href="{{path('home')}}"><img src="{{asset('asset/img/images/logo/07.png')}}" alt=""></a>
+							<a href="{{path('home')}}"><img class="logo-inverse" src="{{asset('asset/img/images/logo/07.png')}}" alt=""></a>						</div>
+						<div class="cmtk_dt">
+							<h1 class="thnk_coming_title">Merci</h1>
+							<h4 class="thnk_title1">{{ 'resetting.check_email'|trans({'%tokenLifetime%': tokenLifetime})|nl2br }}</h4>
+							<p class="thnk_des"><a href="{{path('home')}}">page d'accueil Cliquez ici</a></p>
+						</div>
+						<div class="tc_footer_main">
+							<div class="tc_footer_left">
+								<ul>
+									<li><a href="about_us.html">Présentation </a></li>
+									<li><a href="contact_us.html">Nous contacter</a></li>
+								</ul>						
+							</div>
+							<div class="tc_footer_right">
+								<p>© 2020 <strong>psc</strong>. Tous les droits sont réservés .</p>
+							</div>
+						</div>
+					</div> 	
+				</div>	
+			</div>	
+		</div>		
+	</div>	
+</div>	
+
+
+
+
+
+{% endblock %}

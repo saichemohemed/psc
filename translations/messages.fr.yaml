@@ -1,0 +1,587 @@
+lang: fr
+
+Menu:
+    MENU: MENU
+    log_in: Se connecter
+    Registerp: s'inscrire
+    Registerm: Tableau de bord
+    Profile1: Accueil
+    Edit_Profile1: Cours
+    Change_password1: Présentation
+    Profile: Profile
+    Edit_Profile: Edit Profile
+    Change_password: Change password
+    Disconnect: Déconnecter
+    Dashboard: Tableau de bord
+    website: Évènement
+    personal_agenda: Contact
+    Appointment_unconfirmed: RDV - non confirmés
+    Appointment_confirmed: RDV - confirmés
+    Appointment_Of_the_Day: RDV - Du Jour
+    My_Appointments: Mes Rendez-vous
+    Waiting_appointment: Rendez vous en attente
+    Establishment: Établissement
+    Reason_for_consultation: Reason for consultation
+    My_schedule: Mon Horaire
+
+Doc:
+    Search_Filter: "Bienvenue à l'école PSC"
+    title: L'endroit idéal pour le développement de votre étude.
+    Filter_Specialist_or_name_Doctor: Filtrer spécialiste ou nom médecin
+    Description: Lire la suite
+    VISIT_WEBSITE:  VISITEZ LE SITE WEB
+    MAKE_AN_APPOINTMENT: PRENDRE RENDEZ-VOUS
+
+Home:
+    Titel: cours de langue par niveau 
+    Titel.Span:  école pro solution center propose également des cours en langue étrangéres par niveau.
+    Titel.H1: cours de soutien
+    Paragraph.Span: l'école pro solution center propose de nombreuses leçons de renforcement pour toute les étapes des niveau scolaire intermédiares et final. 
+
+Waiting_appointment:
+    Waiting_appointment: Rendez-vous en attente
+
+DataTable:
+    sEmptyTable: Aucune donnée disponible dans le tableau
+    sInfo:           Affichage de l'élément _START_ à _END_ sur _TOTAL_ éléments
+    sInfoEmpty:      Affichage de l'élément 0 à 0 sur 0 élément
+    sInfoFiltered:   (filtré à partir de _MAX_ éléments au total)
+    sLengthMenu:     Afficher _MENU_ éléments
+    sLoadingRecords: Chargement...
+    sProcessing:     Traitement...
+    sSearch:     Rechercher 
+    sZeroRecords:    Aucun élément correspondant trouvé
+    oPaginate_sFirst:    Premier
+    oPaginate_sLast:     Dernier
+    oPaginate_sNext:     Suivant
+    oPaginate_sPrevious: Précédent
+    oAria_sSortAscending:   activer pour trier la colonne par ordre croissant
+    oAria_sSortDescending:  activer pour trier la colonne par ordre décroissant
+    N°: N°
+    Lastname: Nom
+    Firstname: Prénom
+    date_hour: date heure
+    pattern: motif
+    status: statut
+    validate: valider
+    remove: supprimer
+    To_Etudiant_record: vers dossier Etudiant
+
+HospitalCenter:
+    Name_Establishments: Contactez-nous
+    Phone: Rendez-le plus simple! 
+    Fax: présentation
+    Address: "L’idée de créer une école qui épaule les élèves et les étudiants remonte à 5 ans. Depuis son existence est considérée comme un support pédagogique pour les niveaux. CEM et Lycée, le taux de réussite de l’école est loin d’être hasard, cela est dû aux efforts de son staff pédagogique et sa direction motivées: L’école PSC (Pro Solution Center) propose des diffèrent service parmi lesquels :
+                         -Cours de soutien des niveaux CEM et Lycée.
+                         -Formation en langues."
+    Wilaya: "Malgré les services offerts par cette dernière, PSC souffre quand même de quelque problème souvent liés à la gestion et à la communication en on mentionne :"
+    City: "Difficulté à accéder aux fichiers de l'apprenant et également perte beaucoup de temps à les chercher, et parfois certains des fichiers sont perdus."
+    Type_Establishments: Type Établissements
+    website: "Difficulté à suivre le paiement mensuel et à les contacter avant la fin du mois retard dans La perception des cours frais mensuels."
+
+Pattern:
+    Add: Ajouter
+    Remove: Supprimer
+
+calendar_hour:
+    choose_the_working_time: Pourquoi nous choisir?
+    minutes: Certificat
+    hour: Lors de l'étude des langues dans notre école, à la fin de l'étude, nous vous délivrons un certificat.
+    Work_schedule: C'est une institution à gestion directe ouverte à tous, dans le respect de chacun, des principes de chacun et de la religion de tous.
+    title: Droit scolaire
+    Start_date: Abordabilité
+    end_date: Nos prix sont abordables pour tous.
+    background: PSC est le meilleur !!
+    text_color: "L'éducation dans notre école PSC est le processus qui facilite l'apprentissage ou l'acquisition de connaissances, de compétences, de valeurs, de croyances et de coutumes. ça signifie aussi aider les gens à apprendre à faire des choses et les encourager à réfléchir,
+
+                                             elle développe en nous une perspective sur la vie. Cela nous aide à nous forger des opinions et à mieux comprendre les choses de la vie."
+    the_days_of_this_week: Derniers événements
+    the_next_period: Lisez maintenant
+    add_work_schedule: nos valeurs
+    modify_hour: "Élargir les valeurs au-delà de la salle de classe en s'assurant que les compétences et les concepts enseignés dans la salle de classe sont authentiquement utiles dans le monde au-delà de l'école.Des valeurs fortes sont au cœur de notre Ecole."
+    time_date_start: notre stratégie
+    time_end_date: "Offrant un environnement multiculturel et convivial dans lequel les étudiants peuvent apprendre avec succès les compétences de base et le contenu académique de base,développer leurs compétences sociales. "
+    start_time: notre mission
+    end_time: "Inspirer les élèves à atteindre leurs objectifs personnels et potentiels grâce à des activités adaptées au développement, individualisées et personnalisées en fonction du rendement et de l'intérêt académique de chaque élève."
+    edit_hour: modifier hure
+    remove_hure: supprimer hure
+    Are_you_sure: Êtes-vous sûr?
+    msg: Voulez-vous vraiment supprimer ces enregistrements? Ce processus ne peut pas être annulé.
+    cancel: Annuler
+    remove: supprimer
+
+
+
+
+calendar_Appointment:
+    Add_Appointment: l'école
+    Username_or_Email_or_Phone: Nom d'utilisateur ou Email ou Téléphone
+    choice_of_time: choix du l'heure
+    Date_and_hour:  Date et heure
+    confirm: Confirmer
+    Edit_Appointment: Modifier le rendez-vous
+    title: Titre
+    date: Date
+    edit: modifier
+    delete_appointment: supprimer le rendez-vous
+    Are_you_sure: Êtes-vous sûr?
+    msg: Voulez-vous vraiment supprimer ces enregistrements? Ce processus ne peut pas être annulé.
+    cancel: Annuler
+    remove: supprimer
+
+
+calendar_Reminding:
+    Add_Reminding: ajouter la note
+    Username_or_Email_or_Phone: Nom d'utilisateur ou Email ou Téléphone
+    hour: heure
+    Date_and_hour_start: Date et heure début
+    End_date_and_time: Date et heure fin
+    state: État
+    write: ecrir ...
+    emergency: urgence
+    important: important
+    intermediate: intermediate
+    choose_status: choisissez le statut
+    edit_Reminding: modifier note
+    New_start_time: Nouvelle heure de début
+    New_end_time: Nouvelle heure de fin
+    New_Date_and_time: Nouvelle date et heure
+    New_End_date_and_time: Nouvelle date et heure de fin
+    edit: modifier
+    delete_Reminding: supprimer le rendez-vous
+    Are_you_sure: Êtes-vous sûr?
+    msg: Voulez-vous vraiment supprimer ces enregistrements? Ce processus ne peut pas être annulé.
+    cancel: Annuler
+    remove: supprimer
+    
+
+
+
+
+Profile:
+    show.mobile_number: numéro de portable
+    show.Email_Address: Email Adresse
+    show.Username: Nom d'utilisateur 
+    show.Profession_number: PNum de profession
+    show.Date_of_Birth: Date de naissance
+    show.Place_of_birth: Lieu de naissance
+    show.Sex: Sexe 
+    show.Address_of_the_medical_cabin: Adresse du cabine medicale
+    show.Account_opening_date: Date d'ouverture du compte
+    show.last_connection_on: Dernière connexion le
+    show.Doctor_Profile: Médecin Profil
+
+AppointmentEtudiant:
+    Appointment_Of_the_Day: Rendez-vous Aujourdhui
+    pending_Consultation: en attendant Consultation
+    to_Etudiant_record: vers dossier Etudiant
+
+
+medical_personal_history:
+    Doctor_Dealing:  médecin traitant
+    list_of_Doctors_Dealings: liste Des Médecins Traitants
+    Etudiant_Record: Dossier Etudiant
+    Personal: Personnels
+    Family: Familiaux
+    Physiological: Physiologiques
+    Obstetricians: Obstétricaux
+    Psychiatriques: Psychiatriques
+    allergies: Allergies
+    Surgical: Chirurgicaux
+    Medical: Médicaux 
+    summary: Résumé
+    Menarche: Ménarche
+    Menopause: Ménaupose
+    Dysmenorrhea: Dysménorrhée
+    Dyspareunie: Dyspareunie
+    Duration_and_type_of_menstrual_cycle: Durée et type du cycle menstruel
+    Duration_of_menstruation: Durée des menstruations
+    abundance: abondance
+    Initial: Initiale
+    Other: Autre
+    Gesture: Gestité
+    Parity: Parité
+    Cesarean: Césarienne
+    Abortions: Avortements
+    Type_of_contraception: Type de contraception
+    Obstetric_antiossidante: Antiossidante Obstétricaux
+    Psychiatric: Psychiatriques
+    Psycho_traumatic: Psycho-traumatiques
+    Toxic: Toxiques 
+    Prisoners: Carcéraux
+    Psychomotor_development: Développement psychomoteur
+    Traumatic_stories: Histoires traumatisantes
+    Update_History_medical: mise à jour les Antécédents
+
+
+RegistrationType:
+    gender:
+        placeholder: 'Choisir...'
+        choices:
+            Women: Femme 
+            Man: Homme 
+
+ProfileType:
+    gender:
+        placeholder: 'Choisir...'
+        choices:
+            Women: Femme 
+            Man: Homme 
+
+
+profile_user:
+    ConfirmationAppointment:
+        Your_appointment_on: Votre rendez-vous le
+        Confirmed: confirmé
+        Doctor: Médecin
+        Address: Address
+        Specialty: Specialite
+        Reason: Raison
+        informations: info
+        edit: modifier
+        cancel: annuler
+        No_confirmed_appointment_found: Aucun rendez-vous confirmé trouvé 
+        msg: Êtes-vous sûr de bien vouloir supprimer cet Rendez-vous?
+
+    ConfirmationShow:
+        start_date: date de  début
+        end_date: date de fin
+        pattern: motif
+        status: statut
+        confirmed: confirmé
+
+    waitingConfirmationAppointment:
+        Your_appointment_on: Votre rendez-vous le
+        Confirmed: confirmé
+        Doctor: Médecin
+        Address: Address
+        Specialty: Specialite
+        Reason: Raison
+        waiting: en attente
+        title: liste des Rendez-vous en attente
+
+    Profile_Etudiant:
+        Phone: Téléphone
+        Emergency_telephone: Téléphone d'urgence
+        fax: fax
+        Chifae_Card_Num: Num Cartechifae
+        Family_situation: Situation familiale
+        referenced_by: référencé par
+        Etudiant_Profile: Profil Etudiant
+        username: Nom d'utilisateur
+        Last_name_and_first_name: Nom et Prénom
+        Email: Email
+        Date_of_Birth: Date de naissance
+        Place_of_birth: Lieu de naissance
+        sex: le sexe
+        Address: Adresse
+        Origin: Origine        
+        last_connection: Dernière connexion
+
+Searche:
+    SearcheDoctor: Médecin, établissement, spécialité…
+    SearcheWilaya: OU ?
+    Research: Recherche
+
+Doctor:
+    error:
+        mgs1: Désolé  - 
+        mgs2: ou
+        mgs3:  '- non trouvée'
+        mgs4: ce nom ou la wilaya ou cette spécialité n’existe pas essayez avec un autre nom ou vérifier si vous avez bien écrite le nom.
+        mgs5: PAGE D'ACCUEIL
+        mgs6: PRENDRE RENDEZ-VOUS
+        mgs7: pour prendre un rendez-vous choisissez une heure précise
+
+Confirmation:
+    choose_your_motif: choisissez votre motif
+    Etudiant_information: informations de Etudiant
+    It_s_over: C'est terminé
+    Practitioner: Praticien
+    Place_of_consultation: Lieu de consultation
+    Specialty: Spécialité
+    Date_and_hour: Date et heure
+    Choice_of_reason: Choix du motif
+    msg: pour continuer remplir le champ motif
+    next: Suivant
+    Lastname: Nom de famille
+    Firstname: Prénom
+    E-mail: Email
+    gender: sexe
+    Phone: Téléphone
+    previous: précédent
+    login: se connecter
+    register: s'inscrire
+    msg1: CONFIRMÉ VOTRE RENDEZ-VOUS
+    Date: date 
+    reason: motif 
+    make_an_appointment: prendre rendez-vous
+    msag: Rendez-vous réservé avec succès!
+    msag1: Rendez-vous réservé avec
+    msag2: à 
+
+
+
+
+
+admin:
+    User:
+        User: utilisateur
+        title: liste des Utilisateur
+        fields:
+            id: id
+            username: Nom d'utilisateur
+            firstName: Prénom
+            lastName: Nom
+            enabled: activé
+            phone: Téléphone
+            gender: sexe
+            email: email
+            firstLoginToday: première connexion aujourd'hui
+        form:
+            firstName: Prénom
+            lastName: Nom
+            username: Nom d'utilisateur
+            email: email
+            imageFile: fichier d'image
+            updatedAt: mis à jour fichier d'image
+            phone: Téléphone
+            enabled: activé
+            lastLogin: Dernière connexion
+            plainPassword: mot de passe
+            roles: rôles
+            ADMIN: ADMIN
+            Doctor: Médecin
+            Etudiant: Etudiant
+    admin:
+        admin: Admin
+        title: liste des Admin
+        fields:
+            id: id
+            username: Nom d'utilisateur
+            firstName: Prénom
+            lastName: Nom
+            enabled: activé
+            phone: Téléphone
+            gender: sexe
+            email: email
+            firstLoginToday: première connexion aujourd'hui
+        form:
+            username: Nom d'utilisateur
+            firstName: Prénom
+            lastName: Nom
+            enabled: activé
+            phone: Téléphone
+            gender: sexe
+            email: email
+            firstLoginToday: première connexion aujourd'hui
+            imageFile: fichier d'image
+            updatedAt: mis à jour fichier d'image
+            plainPassword: mot de passe
+            roles: rôles
+            ADMIN: ADMIN
+    Doctor:
+        Doctor: Médecin
+        title: liste des Médecins
+        fields:
+            id: id
+            username: Nom d'utilisateur
+            firstName: Prénom
+            lastName: Nom
+            enabled: activé
+            phone: Téléphone
+            email: email
+            Professionalnumber: Numéro professional
+            medicaloffice : cabinet médical
+            gender: sexe
+            specialty: spécialité
+            firstLoginToday: première connexion aujourd'hui
+            accountopeningdate: date d'ouverture du compte
+            workingtime: temps de travail
+        form:
+            username: Nom d'utilisateur
+            firstName: Prénom
+            lastName: Nom
+            enabled: activé
+            phone: Téléphone
+            email: email
+            Doctorsnumber: num de médecins
+            medicaloffice : cabinet médical
+            gender: sexe
+            specialty: spécialité
+            imageFile: fichier d'image
+            updatedAt: mis à jour fichier d'image
+            accountopeningdate: date d'ouverture du compte
+            plainPassword: mot de passe
+            roles: rôles
+            Doctor: Doctor
+             
+    Etudiant:
+        Etudiant: Etudiant
+        title: list of Etudiant
+        fields:
+            id: id
+            username: Nom d'utilisateur
+            firstName: Prénom
+            lastName: Nom
+            enabled: activé
+            phone: Téléphone
+            email: email
+            gender: sexe
+            firstLoginToday: première connexion aujourd'hui
+        form:
+            username: Nom d'utilisateur
+            firstName: Prénom
+            lastName: Nom
+            enabled: activé
+            phone: Téléphone
+            email: email
+            gender: sexe
+            imageFile: fichier d'image
+            updatedAt: mis à jour fichier d'image
+            plainPassword: mot de passe
+            roles: rôles
+            Etudiant: Etudiant
+
+
+    Calendar:
+        Calendar: Calendrier
+        title: liste du calendrier
+        fields:
+            id: id
+            bgColor: Couleur de l'arrière plan
+            type: type
+            service: service
+        form:
+            bgColor: Couleur de l'arrière plan
+            type: type
+            service: service
+
+    Evenement:
+        Evenement: Evenement
+        title: liste d'Evenement
+        fields:
+            id: id
+            title: Titre
+            startDatetime: date de début heure
+            endDatetime: date de fin heure
+            bgColor: Couleur de l'arrière plan
+            fgColor: couleur de la police
+        form:
+            title: title
+            startDatetime: date de début heure
+            endDatetime: date de fin heure
+            bgColor: Couleur de l'arrière plan
+            fgColor: couleur de la police
+
+    Service:
+        Service: services
+        title: liste des services
+        fields:
+            id: id
+            name: Nom
+            updateDate: date de mise à jour
+            adminCreated: administrateur créé
+            responsible: responsable
+        form:
+            name: Nom
+            Description: la description
+            adminCreated: administrateur créé
+            responsible: responsable
+            updateDate: date de mise à jour
+
+    Hospital_center:
+        Hospital_center: Centre hospitalier
+        title: liste des centres hospitaliers
+        fields:
+            id: id
+            doctor: médecin
+            name: Nom des établissements
+            type: type Établissements
+            phone: téléphone
+            wilaya: wilaya
+            address: adresse
+            town: ville
+            fax: fax
+            webSite: site Internet
+        form:
+            doctor: médecin
+            name: Nom des établissements
+            type: type Établissements
+            phone: téléphone
+            wilaya: wilaya
+            address: adresse
+            town: ville
+            fax: fax
+            webSite: site Internet
+            updateDate: date de mise à jour            
+            wilaya_alger:
+                Adrar: Adrar 
+                Chlef: Chlef                
+                Laghouat: Man                
+                Oum_bouaghi: Oum bouaghi                
+                Batna: Batna                
+                Bejaia: Bejaia                
+                Biskra: Biskra                
+                Bechar: Bechar                
+                Blida: Blida                
+                Bouira: Bouira                
+                Tamanrasset: Tamanrasset                
+                Tebessa: Tebessa                
+                Tlemcen: Tlemcen                
+                Tiaret: Tiaret                
+                Tizi_ouzou: Tizi ouzou                
+                Alger: Alger                
+                Djelfa: Djelfa                
+                Jijel: Jijel                
+                Setif: Setif                
+                Saida: Saida                
+                Skikda: Skikda                
+                Sidi_Bel_Abbes: Sidi Bel Abbes                
+                Annaba: Annaba                
+                Guelma: Guelma                
+                Constantine: Constantine                
+                Medea: Medea                
+                Mostaganem: Mostaganem                
+                Msila: M'sila                
+                Mascara: Mascara                
+                Ouargla: Ouargla  
+                Oran: Oran                              
+                El_Baydh: El Baydh                
+                Illizi: Illizi                
+                Bordj_Bou_Arreridj: Bordj Bou Arreridj                
+                Boumerdes: Boumerdes                
+                El_Taref: El Taref                
+                Tindouf: Tindouf                
+                Tissemsilt: Tissemsilt                
+                El_Oued: El Oued                
+                Khenchla: Khenchla                
+                Souk_Ahrass: Souk Ahrass                
+                Tipaza: Tipaza                
+                Mila: Mila                
+                Aïn_Defla: Aïn Defla                
+                Nâama: Nâama                
+                Aïn_Temouchent: Aïn Temouchent                
+                Ghardaïa: Ghardaïa                
+                Relizane: Relizane  
+            Type_Establishments:    
+                doctors_office: cabinet médical
+                group_medical_office: cabinet médical de groupe
+                clinical: clinique
+                radiology_center: centre de radiologie  
+Registration_Doctor:
+    Lastname: Nom
+    Firstname: Prénom
+    username: Nom d'utilisateur 
+    Email: Email
+    password: mot de passe
+    Repeat_password: Répéter le nouveau mot de passe
+    Phone: Téléphone
+    Gender: Sexe
+    specialization: spécialisation
+    company: NOM ÉTABLISSEMENT
+    title: Titre
+    Accept_the_terms_and_policy: Acceptez les termes et la politique
+    Already_have_an_account: Vous avez déjà un compte
+    Download_pdf_terms_and_conditions: Télécharger les termes et conditions pdf
+    login: se connecter

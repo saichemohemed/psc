@@ -1,0 +1,78 @@
+{% extends 'baseadmin.html.twig' %}
+
+{% block title %}Notification{% endblock %}
+
+{% block body %}
+
+{% include "include/headerDashboard.html.twig" %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+
+	<!-- Body Start -->
+	<div class="wrapper">
+		<div class="sa4d25">
+			<div class="container-fluid" style="min-height: 600px;">	
+				<h2 class="st_title"><i class="uil uil-wallet"></i>Notification</h2>
+				<span class="iconify" data-icon="mdi:calendar-clock" data-inline="false"></span>
+				<div>
+					<div class="col-md-12">
+						<div class="card_dash1">
+							<div class="card_dash_left1">
+								<i class="uil uil-wallet"></i>
+								<h1>Notification</h1>
+							</div>
+							<div class="card_dash_right1">
+							</div>
+						</div>
+					</div>		
+					<div class="row">
+						<div class="col-12">
+							{% for Annonce in Annonces %}
+								{% for etudiant in Annonce.etudiant %}
+									{% if app.user.id == etudiant.id %}
+										<div class="all_msg_bg">
+											<div class="channel_my item all__noti5">
+												<div class="profile_link">
+													<div class="pd_content">
+														<h6>{{Annonce.titre_annonce }}</h6>
+														<p class="noti__text5">{{Annonce.texte_annonce }}.</p>
+														<span class="nm_time">{{Annonce.Date|ago}}</span>
+													</div>	
+														
+												</div>							
+											</div>			
+										</div>
+									{% endif %}
+								{% endfor %}
+							{% endfor %}
+						</div>
+					</div>
+            	</div>
+			</div>
+		</div>
+{% include "include/footerDashboard.html.twig" %}
+
+	</div>
+
+       
+		<script>
+				{% if "now"|date("m/23/Y") ==  "now"|date("m/d/Y") or "now"|date("m/08/Y") ==  "now"|date("m/d/Y") %}
+					$.ajax({ 
+					url:"{{ path('ajax') }}",
+					data: {'id':1},
+							method: 'post',
+								success: function (data) 
+							{	
+							},
+								error: function () 
+							{
+							},
+						});
+
+	
+				{% endif %}
+
+			{# setInterval(function(){$('#test').load(location.href +  '#test');}, 10000); #}
+		</script>					
+
+{% endblock %}

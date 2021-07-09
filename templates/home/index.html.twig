@@ -1,0 +1,686 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}home page{% endblock %}
+
+{% block body %}
+
+    {% include "include/header.html.twig" %}
+    
+        <section class="flat-slider style2">
+            <div class="rev_slider_wrapper fullwidthbanner-container">
+                <div id="rev-slider3" class="rev_slider fullwidthabanner">
+
+    {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+	 {% for message in app.flashes('error') %}
+            <div class="alert alert-danger">
+                {{ message }}
+            </div>
+        {% endfor %}
+                    <ul>
+                        <!-- Slide 1 -->
+                        <li data-transition="random">
+                            <!-- Main Image -->
+                            <img src="{{asset('asset/img/images/home2/01.png')}}" alt="" data-bgposition="center center" data-no-retina>
+                            <div class="overlay"></div>
+
+                            <!-- Layers -->
+                            <div class="tp-caption tp-resizeme education"
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-161','-100','-80','-50']"
+                            data-fontsize="['70','70','70','30']"
+                            data-lineheight="['90','90','90','35']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" 
+                            data-mask_out="x:inherit;y:inherit;" 
+                            data-start="1000" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-responsive_offset="on"> <div class="education-text text-white">{{ 'Doc.Search_Filter'|trans}}</div> </div>
+
+                            <div class="tp-caption tp-resizeme text-white complete text-edukin"
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-70','-10','5','20']"
+                            data-fontsize="['17','17','16','14']"
+                            data-lineheight="['30','30','26','22']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                            data-mask_in="x:0px;y:[100%];" 
+                            data-mask_out="x:inherit;y:inherit;" 
+                            data-start="1000" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-responsive_offset="on" 
+                            data-paddingright="['550','155','50','2']" >{{ 'Doc.title'|trans}}</div>
+
+                            <div class="tp-caption"
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['40','80','90','90']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                            data-mask_in="x:0px;y:[100%];" 
+                            data-mask_out="x:inherit;y:inherit;" 
+                            data-start="1000" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-responsive_offset="on" 
+                            data-paddingtop= "['50','50','50','50']"
+                            data-paddingbottom= "['50','50','50','50']"> <a href="#" class="btn btn-styl1">{{ 'Doc.Description'|trans}}</a> </div>    
+                        </li>
+
+                        <!-- Slide 2 -->
+                        <li data-transition="random">
+                            <!-- Main Image -->
+                            <img src="{{asset('asset/img/images/home2/01.png')}}" alt="" data-bgposition="center center" data-no-retina>
+                            <div class="overlay"></div>
+
+                            <!-- Layers -->
+
+                            <div class="tp-caption tp-resizeme font-rubik education education"
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-161','-100','-80','-50']"
+                            data-fontsize="['70','70','70','30']"
+                            data-lineheight="['90','90','90','35']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" 
+                            data-mask_out="x:inherit;y:inherit;" 
+                            data-start="1000" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-responsive_offset="on"> <div class="education-text text-white">{{ 'Doc.Search_Filter'|trans}}</div> </div>
+
+                            <div class="tp-caption tp-resizeme text-white complete text-edukin"
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-70','-10','5','20']"
+                            data-fontsize="['17','17','16','14']"
+                            data-lineheight="['30','30','26','22']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                            data-mask_in="x:0px;y:[100%];" 
+                            data-mask_out="x:inherit;y:inherit;" 
+                            data-start="1000" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-responsive_offset="on" 
+                            data-paddingright="['550','155','50','2']" >{{ 'Doc.title'|trans}}</div>
+                            <div class="tp-caption"
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['40','80','90','90']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                            data-mask_in="x:0px;y:[100%];" 
+                            data-mask_out="x:inherit;y:inherit;" 
+                            data-start="1000" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-responsive_offset="on" 
+                            data-paddingtop= "['50','50','50','50']"
+                            data-paddingbottom= "['50','50','50','50']"> <a href="#" class="btn btn-styl1">{{ 'Doc.Description'|trans}}</a> </div>
+                        </li>
+
+                        <!-- Slide 3 -->
+                        <li data-transition="random">
+                            <!-- Main Image -->
+                            <img src="{{asset('asset/img/images/home2/03.png')}}" alt="" data-bgposition="center center" data-no-retina>
+                            <div class="overlay"></div>
+
+                            <!-- Layers -->
+
+                            <div class="tp-caption tp-resizeme font-rubik education education"
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-161','-100','-80','-50']"
+                            data-fontsize="['70','70','70','30']"
+                            data-lineheight="['90','90','90','35']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" 
+                            data-mask_out="x:inherit;y:inherit;" 
+                            data-start="1000" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-responsive_offset="on"> <div class="education-text text-white">{{ 'Doc.Search_Filter'|trans}}</div> </div>
+
+                            <div class="tp-caption tp-resizeme text-white complete text-edukin"
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-70','-10','5','20']"
+                            data-fontsize="['17','17','16','14']"
+                            data-lineheight="['30','30','26','22']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                            data-mask_in="x:0px;y:[100%];" 
+                            data-mask_out="x:inherit;y:inherit;" 
+                            data-start="1000" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-responsive_offset="on" 
+                            data-paddingright="['550','155','50','2']" >{{ 'Doc.title'|trans}}</div>
+
+                            <div class="tp-caption"
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['40','80','90','90']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                            data-mask_in="x:0px;y:[100%];" 
+                            data-mask_out="x:inherit;y:inherit;" 
+                            data-start="1000" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-responsive_offset="on" 
+                            data-paddingtop= "['50','50','50','50']"
+                            data-paddingbottom= "['50','50','50','50']"> <a href="#" class="btn btn-styl1">{{ 'Doc.Description'|trans}}</a> </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- slider -->
+        </section><!-- flat-slider -->
+        <section class="campus">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="flat-benefit-style2 clearfix">
+                            <div class="iconbox-benefit iconbox-width50">
+                                <div class="iconbox iconbox-one">
+                                    <div class="iconbox-icon">
+                                    </div>
+                                    <div class="iconbox-content">
+                                        <h3><a href="#"></a></h3>                  
+                                        <p> </p>       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="iconbox-benefit iconbox-width50">
+                                <div class="iconbox iconbox-two">
+                                    <div class="iconbox-icon">
+                                        <img src="{{asset('asset/img/images/home2/25.png')}}" alt="images">
+                                    </div>
+                                    <div class="iconbox-content">
+                                        <h3><a href="#"> {{ 'Home.Titel'|trans}}</a></h3>
+                                        <p> {{ 'Home.Titel.Span'|trans}}</p>  
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="iconbox-benefit iconbox-width50">
+                                <div class="iconbox iconbox-three">
+                                    <div class="iconbox-icon">
+                                        <img src="{{asset('asset/img/images/home2/26.png')}}" alt="images">
+                                    </div>
+                                    <div class="iconbox-content">
+                                        <h3><a href="#">{{ 'Home.Titel.H1'|trans}}</a></h3>
+                                        <p> {{ 'Home.Paragraph.Span'|trans}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="iconbox-benefit iconbox-width50">
+                                <div class="iconbox iconbox-four">
+                                    <div class="iconbox-icon">
+                                        
+                                    </div>
+                                    <div class="iconbox-content">
+                                        <h3><a href="#"></a></h3>
+                                        <p></p>      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 {% if is_granted('ROLE_USER') == false %}
+                    <div class="col-lg-4">
+                        <div class="apply-admission bg-apply-type2">
+                            <div class="apply-admission-wrap type1 bd-type2">
+                                <div class="apply-admission-inner">
+                                    <h2 class="title text-center">
+                                        <span> {{ 'HospitalCenter.Name_Establishments'|trans}}</span>
+                                    </h2>
+                                    <div class="caption text-center">
+                                        {{ 'HospitalCenter.Phone'|trans}}
+                                    </div>
+                                    <div class="apply-sent apply-sent-style1">
+                                        <form action="#" class="form-sent">
+                                    
+                                        </form>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="form-apply">
+                                <div class="section-overlay183251"></div>
+                                <div class="apply-now">
+                                {{ form_start(form) }}
+                                    <ul>                    																
+                                        <li>{{ form_widget(form.pseudo, {'attr': {'autocomplete': 'off','placeholder': "nom "}}) }}</li>
+                                        <li>{{ form_widget(form.email, {'attr': {'autocomplete': 'off','placeholder': "Email"}}) }}</li>
+                                        <li>{{ form_widget(form.Message, {'attr': {'autocomplete': 'off','placeholder': "message"}}) }}</li>
+                                    </ul>
+                                    <div class="btn-50 hv-border text-center">
+                                {{ form_widget(form.submit, {'attr':{'class': 'btn bg-clfbb545'}}) }}
+                                    </div>
+                                {{ form_end(form) }}
+
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+                </div>
+            </div>
+        </section><!-- campus -->
+        <section class="flat-introduce flat-introduce-style2 clearfix">
+            <div class="bg"></div>
+            <div class="container-fluid">
+                <div class="section-about-left">
+                    <div class="videobox">
+                        <a class="fancybox" data-type="iframe" href="https://www.youtube.com/embed/2Ge1GGitzLw?autoplay=1">
+                            <img src="{{asset('asset/img/images/home2/9.png')}}" alt="images">
+                        </a>
+                    </div>
+                </div>
+                <div class="section-about-right content-introduce">
+                    <div class="caption">
+                        
+                    </div>
+                    <div class="title-section">
+                        <div class="flat-title small heading-type1">{{ 'HospitalCenter.Fax'|trans}}</div>
+                    </div>
+                    <div class="content-introduce-inner">
+                        <p>{{ 'HospitalCenter.Address'|trans}}
+                        </p>
+                        <p>
+                        {{ 'HospitalCenter.Wilaya'|trans}}                        
+                        </p>
+                        <div class="content-list">
+                            <ul>
+                                <li>
+                                    <span class="text">
+                                       	{{ 'HospitalCenter.City'|trans}}
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="text">
+                                    {{ 'HospitalCenter.website'|trans}}
+                                    </span>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- flat-introduce -->
+        
+            
+        </section><!-- flat-services -->
+        <section class="flat-benefit style22">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="title-section">
+                            <div class="flat-title small heading-type5">
+                            {{ 'calendar_hour.choose_the_working_time'|trans}} 
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="iconbox-benefit">
+                                    <div class="iconbox">
+                                        <div class="iconbox-icon">
+                                            <img src="{{asset('asset/img/images/home2/17.png')}}" alt="images">
+                                        </div>
+                                        <div class="iconbox-content iconbox-content-style22">
+                                            <h3><a href="#">{{ 'calendar_hour.minutes'|trans}}</a></h3>
+                                            <p>  
+                                          {{ 'calendar_hour.hour'|trans}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="iconbox-benefit">
+                                    <div class="iconbox">
+                                        <div class="iconbox-icon">
+                                            <img src="{{asset('asset/img/images/home2/18.png')}}" alt="images">
+                                        </div>
+                                        <div class="iconbox-content iconbox-content-style22">
+                                            <h3><a href="#">{{ 'calendar_hour.title'|trans}}</a></h3>
+                                            <p>
+                                             {{ 'calendar_hour.Work_schedule'|trans}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="iconbox-benefit">
+                                    <div class="iconbox">
+                                        <div class="iconbox-icon">
+                                            <img src="{{asset('asset/img/images/home2/19.png')}}" alt="images">
+                                        </div>
+                                        <div class="iconbox-content iconbox-content-style22">
+                                            <h3><a href="#">{{ 'calendar_hour.Start_date'|trans}}</a></h3>
+                                            <p>
+                                            {{ 'calendar_hour.end_date'|trans}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="featured-post">
+                            <img src="{{asset('asset/img/images/home2/2.jpg')}}" alt="images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- flat-benefit -->
+        <section class="testimonial testimonial-style2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-4 col-sm-12">
+                        <div class="featured-post">
+                            <img src="{{asset('asset/img/images/home2/20.png')}}" alt="images">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-8 col-sm-12 max-width100">
+                        <div class="wrap-testimonial">
+                            <div class="title-section">
+                                <div class="flat-title small heading-type5">
+                                {{ 'calendar_hour.background'|trans}}
+                                </div>
+                            </div>
+                            <div class="client-style2 clearfix">
+                                <div class="flat-carousel-box data-effect clearfix" data-gap="30" data-column="1" data-column2="1" data-column3="1" data-column4="1" data-dots="true" data-auto="false" data-nav="false">
+                                    <div class="owl-carousel">
+                                        <div class="testimonial-content">
+                                            <div class="text text-white">
+                                               {{ 'calendar_hour.text_color'|trans}} 
+                                            
+                                            </div>
+                                            
+        </section><!-- testimonial -->
+        <section class="latest-blog latest-blog-type2 latest-blog-style2">
+            <div class="container">
+                <div class="title-section">
+                    <div class="flat-title small heading-type7">
+                     {{ 'calendar_hour.the_days_of_this_week'|trans}} 
+                    </div>
+                </div>
+                <div class="row">
+                    {% for Evenement in Evenements %}
+                        <div class="col-lg-4 col-md-4">
+                            <article class="post post-style2 box-shadow-type1">
+                                <div class="featured-post">
+                                    <img src="{{asset('images/Evenement_img/')}}{{Evenement.image}}" alt="images">
+                                </div>
+                                <div class="post-content">
+                                    <div class="category">
+                                        {{Evenement.titreevenement}}  
+                                    </div>
+                                    <div class="post-title">
+                                        <h5>
+                                            <a href="#">{{Evenement.delais}}</a>
+                                        </h5>
+                                    </div>
+                                    <div class="post-link">
+                                        <a href="{{path('blog_single',{'id': Evenement.id})}}">{{ 'calendar_hour.the_next_period'|trans}}  </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </section><!-- latest-blog -->
+        {# <section class="flat-event flat-event-bg event-bg1 flat-event-style2 clearfix">
+            <div class="content-event-left">
+                <div class="themesflat-content-box" data-padding="11% 15px 11.25% 24.7%" data-sdesktoppadding="11% 15px 11.25% 16.9%" data-ssdesktoppadding="10% 15px 10% 8.5%" data-mobipadding="90px 15px 60px 15%" data-smobipadding="90px 15px 60px 15px">
+                    <div class="section-overlay"></div>
+                    <div class="wrap-event">
+                        <div class="title-section">
+                            <div class="flat-title small heading-type8 text-white">
+                            Tous les événements à venir
+                            </div>
+                        </div>
+                        <div class="inner">
+                            <div class="content-event">
+                                <div class="entry-info clearfix">
+                                    <div class="entry-title">
+                                        <a href="#" class="text-white">
+                                            Conférence internationale sur les affaires .....
+                                        </a>
+                                    </div>
+                                    <div class="entry-meta">
+                                        <ul>
+                                            <li class="date clearfix">
+                                                <span class="icon-event icon-icons8-planner-100"></span>
+                                                <span class="detail-event">20 octobre 2020</span>
+                                            </li>
+                                            <li class="time clearfix">
+                                                <span class="icon-event icon-icons8-stopwatch-100"></span>
+                                                <span class="detail-event">17h00 - 19h00</span>
+                                            </li>
+                                            <li class="location clearfix">
+                                                <span class="icon-event icon-icons8-marker-100"></span>
+                                                <span class="detail-event">Algérie</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-event">
+                                <div class="entry-info clearfix">
+                                    <div class="entry-title">
+                                        <a href="#" class="text-white">
+                                            Conférence internationale sur les affaires .....
+                                        </a>
+                                    </div>
+                                    <div class="entry-meta">
+                                        <ul>
+                                            <li class="date clearfix">
+                                                <span class="icon-event icon-icons8-planner-100"></span>
+                                                <span class="detail-event">20 octobre 2020</span>
+                                            </li>
+                                            <li class="time clearfix">
+                                                <span class="icon-event icon-icons8-stopwatch-100"></span>
+                                                <span class="detail-event">17h00 - 19h00</span>
+                                            </li>
+                                            <li class="location clearfix">
+                                                <span class="icon-event icon-icons8-marker-100"></span>
+                                                <span class="detail-event">Algérie</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-event">
+                                <div class="entry-info clearfix">
+                                    <div class="entry-title">
+                                        <a href="#" class="text-white">
+                                            Conférence internationale sur les affaires .....
+                                        </a>
+                                    </div>
+                                    <div class="entry-meta">
+                                        <ul>
+                                            <li class="date clearfix">
+                                                <span class="icon-event icon-icons8-planner-100"></span>
+                                                <span class="detail-event">20 octobre 2020</span>
+                                            </li>
+                                            <li class="time clearfix">
+                                                <span class="icon-event icon-icons8-stopwatch-100"></span>
+                                                <span class="detail-event">17h00 - 19h00</span>
+                                            </li>
+                                            <li class="location clearfix">
+                                                <span class="icon-event icon-icons8-marker-100"></span>
+                                                <span class="detail-event">Algérie</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-event">
+                                <div class="entry-info clearfix">
+                                    <div class="entry-title">
+                                        <a href="#" class="text-white">
+                                            Conférence internationale sur les affaires .....
+                                        </a>
+                                    </div>
+                                    <div class="entry-meta">
+                                        <ul>
+                                            <li class="date clearfix">
+                                                <span class="icon-event icon-icons8-planner-100"></span>
+                                                <span class="detail-event">20 octobre 2020</span>
+                                            </li>
+                                            <li class="time clearfix">
+                                                <span class="icon-event icon-icons8-stopwatch-100"></span>
+                                                <span class="detail-event">17h00 - 19h00</span>
+                                            </li>
+                                            <li class="location clearfix">
+                                                <span class="icon-event icon-icons8-marker-100"></span>
+                                                <span class="detail-event">Algérie</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-event-right">
+                <div class="themesflat-content-box" data-padding="9.2% 29.8% 13.7% 14.9%" data-sdesktoppadding="9.2% 21% 15% 6%" data-ssdesktoppadding="4% 8% 25% 8%"data-mobipadding="100px 15% 100px 15%" data-smobipadding="100px 15px 100px 15px">
+                    <div class="caption">
+                        ENVEDETTE
+                    </div>
+                    <div class="wrap-event">
+                        <div class="flat-counter count-time" data-day="00" data-month="00" data-year="2020" data-hour="00" data-minutes="00" data-second="00">
+                            <div class="counter">
+                                <ul>
+                                    <li class="content-counter">
+                                        <div class="wrap-bg">
+                                            <div class="inner-bg days">
+                                                <span class="numb-count numb cl-fb8122">00</span>
+                                                <span class="name-count">Jour</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content-counter">
+                                        <div class="wrap-bg">
+                                            <div class="inner-bg hours">
+                                                <span class="numb-count numb cl-33d9b2">00</span>
+                                                <span class="name-count">Heure</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content-counter ">
+                                        <div class="wrap-bg">
+                                            <div class="inner-bg seconds">
+                                                <span class="numb-count numb cl-f49ac1">00</span>
+                                                <span class="name-count">Min</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="featured">
+                            <div class="featured-wrap">
+                                <img src="{{asset('asset/img/images/home2/8.jpg')}}" alt="images">
+                                <div class="bg-333"> 
+                                    <div class="entry-title text-center">
+                                        <a href="#" class="text-white">Conférence sur l'éducation.</a>
+                                    </div>
+                                    <ul>
+                                        <li class="date clearfix">
+                                            <span class="icon-event icon-icons8-planner-100"></span>
+                                            <span class="detail-event">20 octobre 2020</span>
+                                        </li>
+                                        <li class="time clearfix">
+                                            <span class="icon-event icon-icons8-stopwatch-100"></span>
+                                            <span class="detail-event">17h00 - 19h00</span>
+                                        </li>
+                                        <li class="location clearfix">
+                                            <span class="icon-event icon-icons8-marker-100"></span>
+                                            <span class="detail-event">Algérie</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flat-button hv-bg333">
+                            <a href="#" class="btn-become">
+                                devenir sponsor
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- flat-event --> #}
+        <section class="special special-style2 clearfix">
+            <div class="container"> 
+                <div class="cl333">
+                    <div class="bg bd-left">
+                        <a href="#">{{ 'calendar_hour.add_work_schedule'|trans}}</a>
+                        <p>{{ 'calendar_hour.modify_hour'|trans}}</p>
+                    </div>
+                </div>
+                <div class="cl333">
+                    <div class="bg bd-center active">
+                        <a href="#">{{ 'calendar_hour.time_date_start'|trans}}</a>
+                        <p>{{ 'calendar_hour.time_end_date'|trans}}<br></p>
+                    </div>
+                </div>
+                <div class="cl333">
+                    <div class="bg bd-right">
+                        <a href="#"> {{ 'calendar_hour.start_time'|trans}}</a>
+                        <p>{{ 'calendar_hour.end_time'|trans}}</p>
+                    </div>
+                </div>
+            </div> 
+        </section><!-- special -->
+    {% include "include/footer.html.twig" %}
+
+{% endblock %}

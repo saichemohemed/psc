@@ -1,0 +1,74 @@
+{% extends 'baseadmin.html.twig' %}
+
+{% block title %}Emploi{% endblock %}
+
+{% block body %}
+
+{% include "include/headerDashboard.html.twig" %}
+
+
+	<!-- Body Start -->
+	<div class="wrapper">
+		<div class="sa4d25">
+			<div class="container-fluid" style="min-height: 600px;">	
+				<h2 class="st_title"><i class="uil uil-calendar-alt"></i>emploi du temps</h2>
+				<span class="iconify" data-icon="mdi:calendar-clock" data-inline="false"></span>
+				<div>
+					<div class="col-md-12">
+						<div class="card_dash1">
+							<div class="card_dash_left1">
+								<i class="uil uil-calendar-alt"></i>
+								<h1>emploi du temps</h1>
+							</div>
+							<div class="card_dash_right1">
+							</div>
+						</div>
+					</div>		
+					<div class="row">
+						<div class="col-md-12">
+							<div class="my_courses_tabs">
+								<div class="tab-content" id="pills-tabContent">
+									<div class="tab-pane fade show active" id="pills-my-courses" role="tabpanel">
+										<div class="table-responsive mt-30">
+												<table class="table ucp-table">
+													<thead class="thead-s">
+														<tr>
+															<th class="text-center" scope="col">Groupe</th>
+															<th class="text-center" scope="col">Cour</th>
+															<th class="text-center" scope="col">jour</th>
+															<th class="text-center" scope="col">heure debut</th>
+															<th class="text-center" scope="col">heure fin</th>
+														</tr>
+													</thead>
+												{% if Groupes is defined %}
+													{% for Groupee in Groupes %}
+														{% for Groupe in Groupee %}
+															{% for Emploi in Groupe.Emploi %}
+																	<tbody>
+																		<tr>
+																			<td class="text-center">{{Groupe.name}}</td>
+																			<td class="text-center">{{Groupe.Langue}}</td>
+																			<td class="text-center">{{Emploi.jour}}</td>
+																			<td class="text-center">{{Emploi.heure_debut|date('H:i')}}</td>
+																			<td class="text-center">{{Emploi.heure_fin|date('H:i')}}</td>
+																		</tr>
+																	</tbody>
+																{% endfor %}
+															{% endfor %}
+													{% endfor %} 
+												{% endif %}
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+            	</div>
+			</div>
+		</div>
+{% include "include/footerDashboard.html.twig" %}
+
+	</div>
+
+{% endblock %}

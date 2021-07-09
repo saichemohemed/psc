@@ -1,0 +1,555 @@
+lang: en
+Menu:
+    MENU: MENU
+    log_in: login
+    Registerp: Create an account
+    Registerm: Dashboard
+    Profile1: Home
+    Edit_Profile1: Classes
+    Change_password1: Presentation 
+    Profile: Profile
+    Edit_Profile: Edit_Profile
+    Change_password: Change password
+    Disconnect: Disconnect
+    Dashboard: Dashboard
+    website: Évènement
+    personal_agenda: Contact   
+    Appointment_unconfirmed: Appointment - unconfirmed
+    Appointment_confirmed: Appointment - confirmed
+    Appointment_Of_the_Day: Appointment - Of the Day
+    My_Appointments: My Appointments
+    Waiting_appointment: Waiting appointment
+    Establishment: Establishment
+    Reason_for_consultation: Reason for consultation  
+    My_schedule: My schedule
+
+Doc:
+    Search_Filter: Welcome to PSC school
+    title: The ideal place for the development of your study.
+    Description: Read more
+    VISIT_WEBSITE: VISIT WEBSITE
+    MAKE_AN_APPOINTMENT: MAKE AN APPOINTMENT  
+
+
+Home:
+    Titel: language courses by level
+    Titel.Span:  school pro solution center also offers courses in foreign languages ​​by level.
+    Titel.H1: remedial teaching
+    Paragraph.Span: the pro solution center school offers many reinforcement lessons for all stages of the intermediate and final school level.
+
+Waiting_appointment:
+    Waiting_appointment: Waiting appointment
+
+DataTable:
+    sEmptyTable:    No data available in table
+    sInfo:           Showing _START_ to _END_ of _TOTAL_ entries
+    sInfoEmpty:      Showing 0 to 0 of 0 entries
+    sInfoFiltered:   (filtered from _MAX_ total entries)
+    sLengthMenu:     Show _MENU_ entries
+    sLoadingRecords: Loading...
+    sProcessing:     Processing...
+    sSearch:     Search 
+    sZeroRecords:    No matching records found
+    oPaginate_sFirst:    First
+    oPaginate_sLast:     Last
+    oPaginate_sNext:     Next
+    oPaginate_sPrevious: Previous
+    oAria_sSortAscending:   activate to sort column ascending
+    oAria_sSortDescending:  activate to sort column descending
+    N°: N°
+    Lastname: Lastname
+    Firstname: Firstname
+    date_hour: date hour 
+    pattern: pattern
+    status: status
+    validate: validate
+    remove: remove
+    To_Etudiant_record: To Etudiant record
+
+HospitalCenter:
+    Name_Establishments: Contact us
+    Phone: Make it simpler! 
+    Fax: presentation
+    Address: "The idea of ​​creating a school that supports pupils and students dates back 5 years. Since its existence is considered as an educational support for the levels. CEM and Lycée, the school's success rate is far from accidental, this is due to the efforts of its motivated teaching staff and management: The PSC (Pro Solution Center) school offers various services including:
+                         -Support courses for CEM and Lycée levels.
+                         -Training in languages."
+    Wilaya: "Despite the services offered by the latter, PSC still suffers from some problem often related to management and communication, including:"
+    City: "Difficulty accessing learner files and also wasting a lot of time looking for them, and sometimes some of the files are lost."
+    Type_Establishments: Type Establishments
+    website: "Difficulty keeping up with monthly payment and contacting them before end of month Delay in collecting monthly fees."
+
+Pattern:
+    Add: Add
+    Remove: Remove
+
+calendar_hour:
+    choose_the_working_time: Why choose us?
+    minutes: Certificate
+    hour: When studying languages ​​in our school, at the end of the study we issue you a certificate.
+    Work_schedule: It is a directly managed institution open to everyone, with respect for everyone, for everyone's principles and for everyone's religion.
+    title: School law
+    Start_date: Affordability
+    end_date: Our prices are affordable for everyone.
+    background: PSC is the best !!
+    text_color: "Education in our PSC school is the process that facilitates the learning or acquisition of knowledge, skills, values, beliefs and customs. it also means helping people learn to do things and encouraging them to think,
+
+                                             it develops in us a perspective on life. It helps us form opinions and better understand things in life."
+    the_days_of_this_week: Latest events
+    the_next_period: Read now
+    add_work_schedule: our values
+    modify_hour: Broaden values ​​beyond the classroom by ensuring that the skills and concepts taught in the classroom are genuinely useful in the world beyond the school Strong values ​​are at the heart of our School .
+    time_date_start: our strategy
+    time_end_date: "Providing a multicultural and friendly environment in which students can successfully learn basic skills and basic academic content, develop their social skills."
+    start_time: our mission
+    end_time: "Inspiring students to achieve their personal and potential goals through developmentally appropriate, individualized and personalized activities based on each student's performance and academic interest."
+    edit_hour: modifier hure
+    remove_hure: supprimer hure
+    Are_you_sure: Êtes-vous sûr?
+    msg: Voulez-vous vraiment supprimer ces enregistrements? Ce processus ne peut pas être annulé.
+    cancel: Annuler
+    remove: supprimer
+
+calendar_Appointment:
+    Add_Appointment: school
+    Username_or_Email_or_Phone: Username or Email or Phone
+    choice_of_time: choice of time
+    Date_and_hour: Date and hour
+    confirm: confirm
+    Edit_Appointment: Edit Appointment
+    title: title
+    date: date
+    edit: edit
+    delete_appointment: delete appointment
+    Are_you_sure: Are you sure?
+    msg: Are you sure you want to delete these records? This process cannot be canceled.
+    cancel: cancel
+    remove: remove
+
+calendar_Reminding:
+    Add_Reminding: Add Reminding
+    Username_or_Email_or_Phone: Username or Email or Phone
+    hour: hour
+    Date_and_hour_start: Date and hour start
+    End_date_and_time: End date and time
+    state: state
+    write: write ...
+    emergency: emergency
+    important: important
+    intermediate: intermediate
+    choose_status: choose status
+    edit_Reminding: edit Reminding
+    New_start_time: New start time
+    New_end_time: New end time
+    New_Date_and_time: New Date and time
+    New_End_date_and_time: New End date and time
+    edit: edit
+    delete_Reminding: delete Reminding
+    Are_you_sure: Are you sure?
+    msg: Are you sure you want to delete these records? This process cannot be canceled.
+    cancel: cancel
+    remove: remove
+
+
+
+
+Profile:
+    show.mobile_number: mobile number
+    show.Email_Address: Email Address
+    show.Username: Username 
+    show.Profession_number: Profession number
+    show.Date_of_Birth: Date of Birth
+    show.Place_of_birth: Place of birth
+    show.Sex: Sex
+    show.Address_of_the_medical_cabin: Address of the medical cabin
+    show.Account_opening_date: Account opening date
+    show.last_connection_on: last connection on
+    show.Doctor_Profile: Doctor Profile
+
+AppointmentEtudiant:
+    Appointment_Of_the_Day: Appointment - Of the Day                                             
+    pending_Consultation: pending Consultation
+    to_Etudiant_record: to Etudiant record
+
+medical_personal_history:
+    Doctor_Dealing: Doctor Dealing
+    list_of_Doctors_Dealings: list_of_Doctors_Dealings
+    Etudiant_Record: Etudiant Record
+    Personal: Personal
+    Family: Family
+    Physiological: Physiological
+    Obstetricians: Obstetricians
+    Psychiatriques: Psychiatriques
+    allergies: allergies
+    Surgical: Surgical
+    Medical: Medical 
+    summary: summary
+    Menarche: Menarche
+    Menopause: Menopause
+    Dysmenorrhea: Dysmenorrhea
+    Dyspareunie: Dyspareunie
+    Duration_and_type_of_menstrual_cycle: Duration and type of menstrual cycle
+    Duration_of_menstruation: Duration of menstruation
+    abundance: abundance
+    Initial: Initial
+    Other: Other
+    Gesture: Gesture
+    Parity: Parity
+    Cesarean: Cesarean
+    Abortions: Abortions
+    Type_of_contraception: Type of contraception
+    Obstetric_antiossidante: Obstetric antiossidante 
+    Psychiatric: Psychiatric
+    Psycho_traumatic: Psycho-traumatic
+    Toxic: Toxic 
+    Prisoners: Prisoners
+    Psychomotor_development: Psychomotor development
+    Traumatic_stories: Traumatic stories
+    Update_History_medical: Update History medical
+
+RegistrationType:
+    gender:
+        placeholder: 'choose...'
+        choices:
+            Women: Women 
+            Man: Man 
+
+ProfileType:
+    gender:
+        placeholder: 'choose...'
+        choices:
+            Women: Women 
+            Man: Man             
+
+HospitalCenterType:
+    gender:
+        btn_submit: update
+        placeholder: 'choose...'
+        wilaya:
+            Adrar: Adrar 
+            Chlef: Chlef                
+            Laghouat: Man                
+            Oum_bouaghi: Oum bouaghi                
+            Batna: Batna                
+            Bejaia: Bejaia                
+            Biskra: Biskra                
+            Bechar: Bechar                
+            Blida: Blida                
+            Bouira: Bouira                
+            Tamanrasset: Tamanrasset                
+            Tebessa: Tebessa                
+            Tlemcen: Tlemcen                
+            Tiaret: Tiaret                
+            Tizi_ouzou: Tizi ouzou                
+            Alger: Alger                
+            Djelfa: Djelfa                
+            Jijel: Jijel                
+            Setif: Setif                
+            Saida: Saida                
+            Skikda: Skikda                
+            Sidi_Bel_Abbes: Sidi Bel Abbes                
+            Annaba: Annaba                
+            Guelma: Guelma                
+            Constantine: Constantine                
+            Medea: Medea                
+            Mostaganem: Mostaganem                
+            Msila: M'sila                
+            Mascara: Mascara                
+            Ouargla: Ouargla   
+            Oran: Oran                                           
+            El_Baydh: El Baydh                
+            Illizi: Illizi                
+            Bordj_Bou_Arreridj: Bordj Bou Arreridj                
+            Boumerdes: Boumerdes                
+            El_Taref: El Taref                
+            Tindouf: Tindouf                
+            Tissemsilt: Tissemsilt                
+            El_Oued: El Oued                
+            Khenchla: Khenchla                
+            Souk_Ahrass: Souk Ahrass                
+            Tipaza: Tipaza                
+            Mila: Mila                
+            Aïn_Defla: Aïn Defla                
+            Nâama: Nâama                
+            Aïn_Temouchent: Aïn Temouchent                
+            Ghardaïa: Ghardaïa                
+            Relizane: Relizane                
+        Type_Establishments:    
+            doctors_office: doctor's office
+            group_medical_office: group medical office
+            clinical: clinical
+            radiology_center: radiology center
+
+profile_user:
+    ConfirmationAppointment:
+        Your_appointment_on: Your appointment on
+        Confirmed: Confirmed
+        Doctor: Doctor
+        Address: Address
+        Specialty: specialty
+        Reason: Reason
+        informations: informations
+        edit: modifier
+        cancel: cancel
+        No_confirmed_appointment_found: No confirmed appointment found
+        msg: Are you sure you want to delete this Appointment?
+        
+    ConfirmationShow:
+        start_date: start date
+        end_date: end date
+        pattern: pattern
+        status: status
+        confirmed: confirmed
+
+    waitingConfirmationAppointment:
+        Your_appointment_on: Your appointment on
+        Confirmed: Confirmed
+        Doctor: Doctor
+        Address: Address
+        Specialty: specialty
+        Reason: Reason
+        waiting: waiting
+        title: list of pending appointments
+
+    Profile_Etudiant:
+        Phone: Phone
+        Emergency_telephone: Emergency telephone
+        fax: fax
+        Chifae_Card_Num: Chifae Card Num
+        Family_situation: Family situation
+        referenced_by: referenced by
+        Etudiant_Profile: Etudiant Profile
+        username: username
+        Last_name_and_first_name: Last name and first name
+        Email: Email
+        Date_of_Birth: Date of Birth
+        Place_of_birth: Place of birth
+        sex: gender
+        Address: Address
+        Origin: Origin
+        last_connection: last connection
+
+Searche:
+    SearcheDoctor
+
+Doctor:
+    error:
+        mgs1: Sorry  -
+        mgs2: or
+        mgs3: '- not found '
+        mgs4: this name or the wilaya or this specialty does not exist try with another name or check if you have written the name correctly.
+        mgs6: MAKE AN APPOINTMENT
+        mgs7: to make an appointment choose a specific time
+
+Confirmation:
+    choose_your_motif: choose your reason 
+    Etudiant_information: Etudiant information
+    It_s_over: It's over
+    Practitioner: Practitione
+    Place_of_consultation: Place of consultation
+    Specialty: Specialty
+    Date_and_hour: Date and hour
+    Choice_of_reason: Choice of reason
+    msg: to continue filling the reason field
+    next: next
+    Lastname: Last name
+    Firstname: First name
+    E-mail: E-mail
+    gender: gender
+    Phone: Phone
+    previous: previous
+    login: login
+    register: register
+    msg1: CONFIRM YOUR APPOINTMENT    
+    Date: Date
+    reason: reason
+    make_an_appointment: make an appointment
+    msag: Appointment booked Successfully!
+    msag1: Appointment booked with
+    msag2: at 
+
+
+
+
+admin:
+    User:
+        User: User
+        title: User list
+        fields:
+            id: id
+            username: username
+            firstName: firstName
+            lastName: lastName
+            enabled: enabled
+            phone: phone
+            gender: gender
+            email: email
+            firstLoginToday: firstLoginToday
+        form:
+            firstName: firstName
+            lastName: lastName
+            username: username
+            email: email
+            imageFile: imageFile
+            updatedAt: updatedAt
+            phone: phone
+            enabled: enabled
+            lastLogin: lastLogin
+            plainPassword: plainPassword
+            roles: roles
+            ADMIN: ADMIN
+            Doctor: Doctor
+            Etudiant: Etudiant
+    
+    admin:
+        admin: Admin
+        title: list of Admin
+        fields:
+            id: id
+            username: username
+            firstName: firstName
+            lastName: lastName
+            enabled: enabled
+            phone: phone
+            gender: gender
+            email: email
+            firstLoginToday: firstLoginToday
+        form:
+            username: username
+            firstName: firstName
+            lastName: lastName
+            enabled: enabled
+            phone: phone
+            gender: gender
+            email: email
+            firstLoginToday: firstLoginToday
+            imageFile: imageFile
+            updatedAt: updated image file
+            plainPassword: plainPassword
+            roles: roles
+            ADMIN: ADMIN
+    
+    Doctor:
+        Doctor: Doctor
+        title: list of Doctor
+        fields:
+            id: id
+            username: username
+            firstName: firstName
+            lastName: lastName
+            enabled: enabled
+            phone: phone
+            email: email
+            Doctorsnumber: Doctors number
+            Professionalnumber : Professional number
+            gender: gender
+            specialty: specialty
+            firstLoginToday: firstLoginToday
+            accountopeningdate: account opening date
+            workingtime: workingtime
+        form:
+            username: username
+            firstName: firstName
+            lastName: lastName
+            enabled: enabled
+            phone: phone
+            email: email
+            Doctorsnumber: Doctors number
+            medicaloffice : medical office
+            gender: gender
+            specialty: specialty
+            imageFile: imageFile
+            updatedAt: updated image file
+            accountopeningdate: account opening date
+            plainPassword: plainPassword
+            roles: roles
+            Doctor: Doctor
+
+    Etudiant:
+        Etudiant: Etudiant
+        title: list of Etudiant
+        fields:
+            id: id
+            username: username
+            firstName: firstName
+            lastName: lastName
+            enabled: enabled
+            phone: phone
+            email: email
+            gender: gender
+            firstLoginToday: firstLoginToday
+        form:
+            username: username
+            firstName: firstName
+            lastName: lastName
+            enabled: enabled
+            phone: phone
+            email: email
+            gender: gender
+            imageFile: imageFile
+            updatedAt: updated image file
+            plainPassword: plainPassword
+            roles: roles
+            Etudiant: Etudiant
+
+    Calendar:
+        Calendar: Calendar
+        title: list of Calendar
+        fields:
+            id: id
+            bgColor: bacground color
+            type: type
+            service: service
+        form:
+            bgColor: bacground color
+            type: type
+            service: service
+
+    Evenement:
+        Evenement: Evenement
+        title: list of Evenement
+        fields:
+            id: id
+            title: title
+            startDatetime: startDatetime
+            endDatetime: endDatetime
+            bgColor: bacground color
+            fgColor: font color
+        form:
+            title: title
+            startDatetime: startDatetime
+            endDatetime: endDatetime
+            bgColor: bacground color
+            fgColor: font color
+
+    Service:
+        Service: Service
+        title: list of Service
+        fields:
+            id: id
+            name: name
+            updateDate: updateDate
+            adminCreated: adminCreated
+            responsible: responsible
+        form:
+            name: name
+            Description: description
+            adminCreated: adminCreated
+            responsible: responsible
+            updateDate: updateDate
+
+Registration_Doctor:
+    Lastname: Last name
+    Firstname: First name
+    username: username 
+    Email: Email
+    password: password
+    Repeat_password: Repeat password
+    specialization: specialization
+    company: company
+    Phone: Phone
+    Gender: Gender
+    title: title
+    Accept_the_terms_and_policy: Accept the terms and policy
+    Already_have_an_account: Already have an account
+    Download_pdf_terms_and_conditions: Download pdf terms and conditions
+    login: log in

@@ -1,0 +1,33 @@
+{% extends '@EasyAdmin/default/layout.html.twig' %}
+
+
+
+{% block content_title %}
+    {% apply spaceless %}
+        {% set _default_title = 'Répondre Message' %}
+        {{ _entity_config.new.title is defined ? _entity_config.new.title|trans(_trans_parameters) : _default_title }}
+    {% endapply %}
+{% endblock %}
+
+    {% block main %}
+
+            {{ form_start(form) }} 
+
+
+				{{ form_widget(form.contenu, {'attr': {'class': 'form-control','placeholder': "Écrire a message..."}}) }}<br>
+				{{ form_widget(form.submit,{ 'attr': {'class': 'btn'},'label': 'envoyer' }) }}
+
+            {{ form_end(form) }}
+                    
+
+    {% endblock %}
+
+
+{% block body_javascript %}
+    {{ parent() }}
+
+    <script>
+ 
+    </script>
+
+{% endblock %}

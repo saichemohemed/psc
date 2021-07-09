@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <title>{% block title %}ecole prive{% endblock %}</title>
+
+        {% block stylesheets %}
+
+            {% include "include/indexCss.html.twig" %}
+            
+        {% endblock %}
+
+    </head>
+    <body>
+
+        {% block body %}
+
+
+        {% endblock %}
+
+        {% block javascripts %}
+
+            {% include "include/indexJs.html.twig" %}
+
+        {% endblock %}
+
+    </body>
+</html>

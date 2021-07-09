@@ -1,0 +1,227 @@
+easy_admin:
+    design:
+        assets:
+            favicon: 'asset/img/images/logo/favicon.ico'
+        menu:
+            - { entity: 'User', icon: 'user' }
+            - { entity: 'Admin', icon: 'user-shield' }
+            - { entity: 'Etudiant', icon: 'user-graduate' }           
+            - { entity: 'Annee', icon: 'calendar-alt' }
+            - { entity: 'Specialite', icon: 'chalkboard-teacher' }
+            - { entity: 'NiveauScolaire', icon: 'graduation-cap' }
+            - { entity: 'CourNiveau', icon: 'book-open' }            
+            - { entity: 'CourSoutien', icon: 'book-reader' }
+            - { entity: 'EmploiDuTemps', icon: 'business-time' }            
+            - { entity: 'Groupe', icon: 'users' }           
+            - { entity: 'Cours', icon: 'user-edit' }
+            - { entity: 'Evenement', icon: 'calendar-plus' }
+            - { entity: 'Contact', icon: 'envelope-open-text' }
+            - { entity: 'Message', icon: 'comments' }
+            - { entity: 'Paiement', icon: 'money-bill-alt' }
+            - { entity: 'Annonce', icon: 'bullhorn' }
+
+
+    list:
+        collapse_actions: false
+        actions:
+            - { name: 'edit', icon: 'pencil', label: false, title: 'edit' }
+            - { name: 'show', icon: 'eye', label: false, title: 'voir' }
+            - { name: 'delete', icon: 'trash-alt', label: false, title: 'Supprimer' }
+    formats:
+        date:     'Y-m-d'
+        time:     'H:i'
+        datetime: 'Y-m-d H:i:s'
+        number: '%0.2f'
+    site_name: '<img src="/asset/img/images/logo/07.png" >'
+
+
+    entities:
+        User:
+            class: App\Entity\User 
+            image_base_path: 'http://static.acme.org/img/'
+            label: 'admin.User.User'
+            list:
+                title: 'admin.User.title'
+                fields: [{ property: 'id', label: 'N°' },{ property: 'username', label: 'admin.User.fields.username' },{ property: 'firstName', label: 'admin.User.fields.firstName' },{ property: 'lastName', label: 'admin.User.fields.lastName' },{ property: 'enabled', label: 'admin.User.fields.enabled' },{ property: 'phone', label: 'admin.User.fields.phone' },{ property: 'email', label: 'admin.User.fields.email' },{ property: 'gender', label: 'admin.User.fields.gender' },{ property: 'firstLoginToday', label: "admin.User.fields.firstLoginToday" }]
+            disabled_actions: ['new']        
+
+            show:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'username', label: 'admin.User.fields.username' },{ property: 'firstName', label: 'admin.User.fields.firstName' },{ property: 'lastName', label: 'admin.User.fields.lastName' },{ property: 'enabled', label: 'admin.User.fields.enabled' },{ property: 'phone', label: 'admin.User.fields.phone' },{ property: 'email', label: 'admin.User.fields.email' },{ property: 'gender', label: 'admin.User.fields.gender' },{ property: 'firstLoginToday', label: "admin.User.fields.firstLoginToday" }]
+
+            form:
+                fields:
+                    - { property: 'firstName', label: 'admin.User.form.firstName' }
+                    - { property: 'lastName', label: 'admin.User.form.lastName' }
+                    - { property: 'username', label: 'admin.User.form.username' }
+                    - { property: 'email', label: 'admin.User.form.email' }
+                    - { property: 'imageFile', label: 'admin.User.form.imageFile', type: 'vich_file' }
+                    - { property: 'updatedAt', label: 'admin.User.form.updatedAt',type: 'date'}
+                    - { property: 'phone', label: 'admin.User.form.phone' }
+                    - { property: 'enabled', label: 'admin.User.form.enabled' }
+                    - { property: 'lastLogin', label: 'admin.User.form.lastLogin' }
+                    - { property: 'plainPassword', label: 'admin.User.form.plainPassword', type: 'text', type_options: { required: false } }
+                    - { property: 'roles',label: 'admin.User.form.roles', type: 'choice', type_options: { multiple: true, choices: { 'admin.User.form.ADMIN': 'ROLE_ADMIN','admin.User.form.Etudiant': 'ROLE_USER' } } }
+        
+        Admin:
+            class: App\Entity\Admin
+            label: 'admin.admin.admin'
+            list:
+                title: "admin.admin.title"
+                fields: [{ property: 'id', label: 'N°' },{ property: 'username', label: 'admin.admin.fields.username' },{ property: 'firstName', label: 'admin.admin.fields.firstName' },{ property: 'lastName', label: 'admin.admin.fields.lastName' },{ property: 'enabled', label: 'admin.admin.fields.enabled' },{ property: 'phone', label: 'admin.admin.fields.phone' },{ property: 'email', label: 'admin.admin.fields.email' },{ property: 'gender', label: 'admin.admin.fields.gender' },{ property: 'firstLoginToday', label: "admin.admin.fields.firstLoginToday" } ]
+            show:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'username', label: 'admin.admin.fields.username' },{ property: 'firstName', label: 'admin.admin.fields.firstName' },{ property: 'lastName', label: 'admin.admin.fields.lastName' },{ property: 'enabled', label: 'admin.admin.fields.enabled' },{ property: 'phone', label: 'admin.admin.fields.phone' },{ property: 'email', label: 'admin.admin.fields.email' },{ property: 'gender', label: 'admin.admin.fields.gender' },{ property: 'firstLoginToday', label: "admin.admin.fields.firstLoginToday" } ]
+            form:
+                fields: [{ property: 'username', label: 'admin.admin.form.username' },{ property: 'firstName', label: 'admin.admin.form.firstName' },{ property: 'lastName', label: 'admin.admin.form.lastName' },{ property: 'enabled', label: 'admin.admin.form.enabled' },{ property: 'phone', label: 'admin.admin.form.phone' },{ property: 'email', label: 'admin.admin.form.email' },{ property: 'gender', label: 'admin.admin.form.gender' },{ property: 'imageFile', label: "admin.admin.form.imageFile", type: 'vich_file' },{ property: 'updatedAt', label: "admin.admin.form.updatedAt",type: 'date'},{ property: 'plainPassword', label: 'admin.admin.form.plainPassword', type: 'text', type_options: { required: false } } { property: 'roles',label: 'admin.admin.form.roles', type: 'choice', type_options: { multiple: true, choices: { 'admin.admin.form.ADMIN': 'ROLE_SUPER_ADMIN' } } }]
+  
+        Etudiant:
+            class: App\Entity\Etudiant
+            label: 'Étudiant'
+            list:
+                title: "admin.Etudiant.title"
+                fields: [{ property: 'id', label: 'N°'},{ property: 'username', label: 'admin.Etudiant.fields.username' },{ property: 'firstName', label: 'admin.Etudiant.fields.firstName' },{ property: 'lastName', label: 'admin.Etudiant.fields.lastName' }, {property: 'enabled', label: 'admin.Etudiant.fields.enabled' },{ property: 'phone', label: 'admin.Etudiant.fields.phone' },{ property: 'email', label: 'admin.Etudiant.fields.email' },{ property: 'gender', label: 'admin.Etudiant.fields.gender' },{ property: 'firstLoginToday', label: "admin.Etudiant.fields.firstLoginToday" } ]
+            show:
+                # fields: [{ property: 'id', label: 'admin.Etudiant.fields.id'},{ property: 'username', label: 'admin.Etudiant.fields.username' },{ property: 'firstName', label: 'admin.Etudiant.fields.firstName' },{ property: 'lastName', label: 'admin.Etudiant.fields.lastName' }, {property: 'enabled', label: 'admin.Etudiant.fields.enabled' },{ property: 'phone', label: 'admin.Etudiant.fields.phone' },{ property: 'email', label: 'admin.Etudiant.fields.email' },{ property: 'gender', label: 'admin.Etudiant.fields.gender' },{ property: 'firstLoginToday', label: "admin.Etudiant.fields.firstLoginToday" } ]
+            form:
+                fields: [{ property: 'username', label: 'admin.Etudiant.form.username' },{ property: 'firstName', label: 'admin.Etudiant.form.firstName' },{ property: 'lastName', label: 'admin.Etudiant.form.lastName' }, {property: 'enabled', label: 'admin.Etudiant.form.enabled' },{ property: 'phone', label: 'admin.Etudiant.form.phone' },{ property: 'email', label: 'admin.Etudiant.form.email' },{ property: 'gender', label: 'admin.Etudiant.form.gender' },{ property: 'imageFile', label: "admin.Etudiant.form.imageFile", type: 'vich_file' },{ property: 'updatedAt', label: "admin.Etudiant.form.updatedAt",type: 'date'},{ property: 'plainPassword', label: 'admin.Etudiant.form.plainPassword', type: 'text', type_options: { required: false } },{ property: 'roles', label: 'admin.Etudiant.form.roles', type: 'choice', type_options: { multiple: true, choices: {'admin.Etudiant.Etudiant': 'ROLE_USER' } } } ]
+                 
+        Annee:
+            class: App\Entity\Annee
+            label: 'Année'
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'annee_scolaire_D', label: 'annee scolaire Debut' },{ property: 'annee_scolaire_F', label: 'annee scolaire Fin' },{ property: 'libelle_niveau', label: 'libelle niveau' },{ property: 'groupes', label: 'groupes' }]
+            new:
+                fields:
+                    - annee_scolaire_D
+                    - annee_scolaire_F
+                    - { property: 'libelle_niveau', help: 'exmp 20/21' }
+        CourNiveau:
+            class: App\Entity\CourNiveau
+            label: 'Cours par niveau'
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'langue',  label: 'langue' },{ property: 'libelle',  label: 'libelle' },{ property: 'duree',  label: 'duree' },{ property: 'prix',  label: 'prix' },{ property: 'delais',  label: 'delais' }]
+            new: 
+                fields: [{ property: 'langue',  label: 'langue' },{ property: 'libelle',  label: 'libelle' },{ property: 'duree',  label: 'duree' },{ property: 'prix',  label: 'prix' },{ property: 'delais',  label: 'delais' },{ property: 'imageFile', type: 'vich_file'} ]            
+            edit: 
+                fields: [{ property: 'langue',  label: 'langue' },{ property: 'libelle',  label: 'libelle' },{ property: 'duree',  label: 'duree' },{ property: 'prix',  label: 'prix' },{ property: 'delais',  label: 'delais' },{ property: 'imageFile', type: 'vich_file'} ]            
+
+        CourSoutien:
+            class: App\Entity\CourSoutien
+            label: 'Cours de soutien'
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'langue',  label: 'langue' },{ property: 'libelle',  label: 'libelle' },{ property: 'duree',  label: 'duree' },{ property: 'prix',  label: 'prix' },{ property: 'delais',  label: 'delais' }]
+            new: 
+                fields: [{ property: 'langue',  label: 'langue' },{ property: 'libelle',  label: 'libelle' },{ property: 'duree',  label: 'duree' },{ property: 'prix',  label: 'prix' },{ property: 'delais',  label: 'delais' },{ property: 'Specialit',  label: 'Specialite' },{ property: 'imageFile', type: 'vich_file'} ]            
+            edit: 
+                fields: [{ property: 'langue',  label: 'langue' },{ property: 'libelle',  label: 'libelle' },{ property: 'duree',  label: 'duree' },{ property: 'prix',  label: 'prix' },{ property: 'delais',  label: 'delais' },{ property: 'Specialit',  label: 'Specialite' },{ property: 'imageFile', type: 'vich_file'} ]            
+
+        EmploiDuTemps:
+            class: App\Entity\EmploiDuTemps
+            label: 'Emploi du temps'
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'jour',  label: 'jour' },{ property: 'heure_debut',  label: 'Heure debut' },{ property: 'heure_fin',  label: 'Heure fin' }  ]
+            new:
+                fields:
+                    - { property: 'jour',  label: 'jour' }  
+                    - { property: 'heure_debut',  label: 'Heure debut' }  
+                    - { property: 'heure_fin',  label: 'Heure fin' }              
+            edit:
+                fields:
+                    - { property: 'jour',  label: 'jour' }  
+                    - { property: 'heure_debut',  label: 'Heure debut' }  
+                    - { property: 'heure_fin',  label: 'Heure fin' }  
+        Groupe:
+            class: App\Entity\Groupe
+            label: 'Groupe'
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'name',  label: "name" },{ property: 'number_etu_grp',  label: "nomber d'étudiant" },{ property: 'Langue',  label: 'Langue' }, { property: 'Niveau',  label: 'Niveau' },{ property: 'Annee',  label: 'Annee' },{ property: 'Emploi',  label: 'Emploi'} ]
+            new:
+                fields: [{ property: 'name',  label: "name" },{ property: 'number_etu_grp',  label: "nomber d'étudiant" },{ property: 'Langue',  label: 'Langue' }, { property: 'Niveau',  label: 'Niveau' },{ property: 'Annee',  label: 'Annee' },{ property: 'Emploi',  label: 'Emploi'} ]  
+            edit:
+                fields: [{ property: 'name',  label: "name" },{ property: 'number_etu_grp',  label: "nomber d'étudiant" },{ property: 'Langue',  label: 'Langue' }, { property: 'Niveau',  label: 'Niveau' },{ property: 'Annee',  label: 'Annee' },{ property: 'Emploi',  label: 'Emploi'} ]
+   
+        NiveauScolaire:
+            class: App\Entity\NiveauScolaire
+            label: 'Niveau scolaire '     
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'libelle_niveau', label: 'libelle niveau' },{ property: 'groupes', label: 'groupes' }]
+            new:
+                fields:
+                    - { property: 'libelle_niveau',  label: 'libelle' }              
+            edit:
+                fields:
+                    - { property: 'libelle_niveau',  label: 'libelle' }   
+        Specialite:
+            class: App\Entity\Specialite  
+            label: 'Spécialité' 
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'nom_specialite',  label: 'Nom specialite' },{ property: 'courSoutiens',  label: 'courSoutiens' }]    
+            edit:
+                fields:
+                    - { property: 'nom_specialite',  label: 'Nom specialite' }            
+            new:
+                fields:
+                    - { property: 'nom_specialite',  label: 'Nom specialite' }
+        Langue:
+            class: App\Entity\Langue        
+        Cours:
+            class: App\Entity\Cours
+            controller: App\Controller\CoursController
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'etudiant', label: 'etudiant' },{ property: 'Groupe', label: 'Groupe' }]
+        Evenement:
+            class: App\Entity\Evenement
+            label: 'Évenement' 
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'titre_evenement'},{ property: 'delais'},{ property: 'date'}]    
+            new: 
+                fields: [{ property: 'titre_evenement'},{ property: 'delais'},{ property: 'imageFile', type: 'vich_file'} ]            
+            edit: 
+                fields: [{ property: 'titre_evenement'},{ property: 'delais'},{ property: 'imageFile', type: 'vich_file'} ]  
+
+        Contact:
+            class: App\Entity\Contact 
+            show:
+                actions: ['-edit']
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'pseudo', label: 'nom et prénom' },{ property: 'email', label: 'email' },{ property: 'Message', label: 'Message' },{ property: 'statut', label: 'statut' }]
+                actions: ['-edit',
+                { name: 'restock', type: 'route' , icon: 'reply-all', label: false, title: 'Répondre Contact' },
+                { name: 'show', icon: 'eye', label: false, title: 'voir' }
+                { name: 'delete', icon: 'trash-alt', label: false, title: 'Supprimer' }]
+            templates:
+                restock: 'admin/edit.html.twig'
+            disabled_actions: ['new']
+        Message:
+            class: App\Entity\Message 
+            show:
+                actions: ['-edit']
+            list: 
+                fields: [{ property: 'id', label: 'N°' },{ property: 'etudiant'},{ property: 'contenu'},{ property: 'date'},{ property: 'statut'} ]
+                actions: ['-edit',
+                { name: 'Message', type: 'route' , icon: 'reply-all', label: false, title: 'Répondre Message' },
+                { name: 'show', icon: 'eye', label: false, title: 'voir' }
+                { name: 'delete', icon: 'trash-alt', label: false, title: 'Supprimer' }]
+            templates:
+                restock: 'admin/edit.html.twig'
+            disabled_actions: ['new']        
+        Paiement:
+            class: App\Entity\Paiement 
+            new: 
+                fields: [{ property: 'imageFile', type: 'vich_file'},{ property: 'mantent'},{ property: 'paye_paiement'},{ property: 'etudiant'},{ property: 'Langue' },{ property: 'Remarque' }] 
+            list:
+                fields: [{ property: 'id', label: 'N°'},{ property: 'etudiant'},{ property: 'etudiant.email',label: 'admin.User.form.email'},{ property: 'etudiant.phone',  label: 'admin.User.form.phone'},{ property: 'Langue'}]             
+                actions: ['-edit',
+                { name: 'histoire', type: 'route' , icon: 'history', label: false, title: 'histoire Paiement' }                
+                { name: 'show', icon: 'eye', label: false, title: 'voir' }
+                { name: 'delete', icon: 'trash-alt', label: false, title: 'Supprimer' }]
+            templates:
+                histoire: 'admin/histoire.html.twig'
+                list: 'admin/list.html.twig'
+        
+        Annonce:
+            class: App\Entity\Annonce              
+            show:
+                actions: ['-edit']            
+            list:
+                fields: [{ property: 'id', label: 'N°' },{ property: 'titre_annonce', label: 'titre' },{ property: 'texte_annonce', label: 'texte' },{ property: 'Date', label: 'Date' },{ property: 'etudiant', label: 'etudiant' }]
+                actions: ['-edit']

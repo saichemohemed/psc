@@ -1,0 +1,141 @@
+group:
+    edit:
+        submit: 'تحديث المجموعة'
+    show:
+        name: 'إسم المجموعة'
+    new:
+        submit: 'إنشاء مجموعة'
+    flash:
+        updated: 'تم تحديث المجموعة'
+        created: 'تم إنشاء المجموعة'
+        deleted: 'تم حـذف المجموعة'
+
+security:
+    login:
+        username: 'إسم المستخدم أو البريد الالكتروني'
+        password: 'كلمة المرور'
+        remember_me: 'حفظ البيانات'
+        submit: 'تسجيل دخول'
+        Forgot_your_password: تغيير كلمة المرور ؟
+        You_do_not_have_an_account: ' لا يوجد لديك حساب؟ '
+        register_here: سجل هنا   
+
+
+profile:
+    show:
+        username: 'إسم المستخدم'
+        email: 'بريد إلكتروني'
+    edit:
+        submit: تحديث 
+    flash:
+        updated: 'تم تحديث الملف الشخصي'
+
+change_password:
+    submit: 'تغيير كلمة المرور'
+    flash:
+        success: 'تم تغيير كلمة المرور'
+
+registration:
+    check_email: 'لقد تم إرسال رسالة إلكترونية إلى %email% تحتوي على رابط يجب إتباعه لتفعيل حسابك الشخصي.'
+    confirmed: 'تهانينا %username%، لقد تم تفعيل حسابك.'
+    back: 'عودة إلى الصفحة الرئيسية'
+    submit: تسجيل
+    flash:
+        user_created: 'تم إنشاء حسابك بنجاح'
+    email:
+        subject: '%username%! مرحبا'
+        message: |
+            مرحبا %username%!
+
+
+             لتفعيل حسابك يرجى إتباع الرابط التالي %confirmationUrl%
+
+             الرابط يمكن إستخدامه مرة واحدة فقط لتفعيل حسابك
+
+            شكرا،
+            فريق العمل.
+
+resetting:
+    check_email: |
+        لقد تم إرسال رسالة إلكترونية تحتوي على رابط يجب الضغط عليه لإعادة ضبط كلمة المرور الخاصة بك.
+        ملحوظة: يمكنك إعادة ضبط كلمة المرور الخاصة بك خلال %tokenLifetime% ساعة
+
+        يرجى التحقق من ملف السبام إذا لم تستقبل الرسالة الإلكترونية قريبا أو أعد المحاولة
+    request:
+        username: 'إسم المستخدم او البريد الالكتروني'
+        submit: 'إعادة ضبط كلمة المرور'
+    reset:
+        submit: 'تغيير كلمة المرور'
+    flash:
+        success: 'تم إعادة ضبط كلمة المرور بنجاح'
+    email:
+        subject: 'إعادة ضبط كلمة المرور'
+        message: |
+            مرحبا %username%!
+
+            لإعادة ضبط كلمة المرور يرجى إتباع الرابط التالي %confirmationUrl%
+
+            شكرا،
+            فريق العمل.
+    New_Password: 'كلمة سر جديدة'
+    Repeat_the_new_password: 'كرر كلمة المرور الجديدة'
+    Please_enter_your_Username_or_email_address: يرجى إدخال اسم المستخدم أو عنوان البريد الإلكتروني الخاص بك
+
+layout:
+    logout: خروج
+    login: دخول
+    register: تسجيل
+    logged_in_as: 'تم الدخول بإسم %username%'
+
+form:
+    group_name: 'إسم المجموعة'
+    username: 'إسم المستخدم'
+    email: 'البريد الإلكتروني'
+    current_password: 'كلمة المرور الحالية'
+    password: 'كلمة المرور'
+    password_confirmation: تأكيد
+    new_password: 'كلمة المرور الجديدة'
+    new_password_confirmation: 'تأكيد كلمة المرور'
+
+
+profile_edit:
+    Edit_Profile:  تعديل ملف 
+    mobile_number: رقم الهاتف المحمول
+    Email_Address: عنوان البريد الإلكتروني
+    Email: البريد الإلكتروني
+    Headline: العنوان
+    Lastname: الكنية
+    First_name: الاسم
+    Profession_number: رقم المهنة
+    Date_of_Birth: تاريخ الولادة
+    Place_of_birth: مكان الولادة
+    Gender: الجنس
+    Doctor_s_office: مكتب الطبيب
+    Address: عنوان
+    Phone: الهاتف المحمول
+    Edit_photo: تعديل الصورة
+
+Change_pass:
+    Change_password: تغيير كلمة المرور
+    Current_Password: 'كلمة المرور الحالية' 
+    New_Password: 'كلمة المرور الجديدة'
+    Repeat_the_new_password: 'تأكيد كلمة المرور'
+
+Registration_User:
+    Lastname: إسم العائلة
+    Firstname: الاسم
+    username: اسم المستخدم 
+    Email: البريد الإلكتروني
+    password: كلمه السر
+    Repeat_password: تأكيد كلمة المرور
+    Phone: الهاتف المحمول
+    Gender: الجنس
+    Address: عنوان
+    Date_of_Birth: تاريخ الولادة
+    Place_of_birth: مكان الولادة
+    Accept_the_terms_and_policy: قبول الشروط والسياسة
+    Already_have_an_account: هل لديك حساب
+    Download_pdf_terms_and_conditions: تنزيل شروط وأحكام pdf
+    login: تسجيل الدخول
+    register: تسجيل
+    
