@@ -160,7 +160,6 @@ class CoursController extends EasyAdminController
 
           $session = new Session(new PhpBridgeSessionStorage());
            $session->set('Me', $Message);
-            //  dump($session->get('Me'));
 
         $em = $this->getDoctrine()->getManager();
         $Annonce = $em->getRepository(Annonce::class)->findAll();
@@ -416,7 +415,6 @@ class CoursController extends EasyAdminController
     {
         // $session = new Session(new PhpBridgeSessionStorage());
            // $session->set('name', $Annonce);
-        // dump($session->get('name'));
 
         $em = $this->getDoctrine()->getManager();
         $Annonce = $em->getRepository(Annonce::class)->findAll();
